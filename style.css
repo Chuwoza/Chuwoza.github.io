@@ -1,4 +1,4 @@
-* {
+d* {
 	box-sizing: border-box;
 }
 body {
@@ -10,7 +10,7 @@ body {
 	width: 1170px;
 	margin: 0 auto;
 }
-.row:after,.menu:after {
+.row:after {
 	content: "";
 	display: block;
 	clear: both;
@@ -52,4 +52,10 @@ body {
 }
 .logo {
 	margin-top: 7px;
+}
+.col-md-41 {
+	width: 25%;
+}
+.col-md-43 {
+	width: 75%;
 }
