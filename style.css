@@ -76,8 +76,9 @@ body {
 	background-color:#fff;
 }
 input {
+	width:auto;
 	padding:10px;
-	margin:5px;
+	margin:5px 5px 5px 30px;
 }
 input-group {
 	position:relative;
