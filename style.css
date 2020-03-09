@@ -40,7 +40,6 @@ body {
 	padding: 25px 0;
 }
 .menu li {
-	/*display: block;*/
 	width: 25%;
 	float: left;
 	border-left: 1px solid #2c71b8;
@@ -65,10 +64,8 @@ body {
 .logo {
 	margin-top: 7px;
 }
-.trash {
-	position:absolute;
-	right:0;
-	margin:5px;
+.cart {
+	margin:5px 5px 5px auto;
 	width:40px;
 	height:40px;
 	text-align: center;
@@ -76,20 +73,38 @@ body {
 	background-color:#fff;
 }
 input {
-	width:auto;
+	width:200px;
+	height: 40px;
 	padding:10px;
 	margin:5px 5px 5px 30px;
+	background: transparent;
+	outline: none;
+	color:#2c71b8;
+	font-size: 21px;
+    font-weight: 100;
 }
-input-group {
-	position:relative;
+input::-webkit-input-placeholder {
+  color: #2c71b8; 
+  font-style: normal;
+  font-size: 21px;
+  font-weight: 100;
 }
 .btn-search {
 	position:absolute;
-	right:5px;
-	top:10px;
+	right:-5px;
+	top:9px;
+	background: #2c71b8;
 }
 button {
-	display: block;
 	height:30px;
 	width:30px;
+    border: none; /* Убираем рамку */
+    outline: none;
+    background: transparent;
+    /*background: rgba(44,113,184,1);*/
+    background: url(images/search.png) no-repeat 50% 50%; 
 }
+button:befor {
+	content: "\f002";
+}
+	
