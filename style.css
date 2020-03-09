@@ -107,4 +107,35 @@ button {
 button:befor {
 	content: "\f002";
 }
-	
+.slider {
+	height:400px;
+	width:auto;
+	margin: 0 auto;
+	text-align: center;
+	line-height: 400px;
+	border: 1px solid #fff;
+}
+.filtr {
+	height:840px;
+	width:auto;
+	margin: 0 auto;
+	text-align: center;
+	line-height: 840px;
+	border: 1px solid #fff;
+}
+.goods {
+	height:2340px;
+	width:auto;
+	margin: 0 auto;
+	text-align: center;
+	line-height: 2180px;
+	border: 1px solid #fff;
+}
+.c1 {
+	height:650px;
+	width:auto;
+	margin: 0 auto;
+	text-align: center;
+	line-height: 650px;
+	border: 1px solid #fff;
+}
