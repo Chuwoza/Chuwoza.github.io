@@ -167,3 +167,13 @@ h1 {
 	color:#fff;
 	margin-top: 12px ;
 }
+.train-header > a :link {
+    color: #fff; /* Цвет ссылок */
+   }
+
+.train-header > a :visited {
+    color: #fff; /* Цвет посещенных ссылок */
+   }
+.train-header > a :active {
+    color: #fff; /* Цвет активных ссылок */
+} 
