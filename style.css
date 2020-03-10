@@ -177,3 +177,9 @@ h1 {
 .train-header > a :active {
     color: #fff; /* Цвет активных ссылок */
 } 
+180
+272
+img{
+  /*position: absolute;*/
+  
+}
