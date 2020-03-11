@@ -105,7 +105,7 @@ button {
     border: none; /* Убираем рамку */
     outline: none;
     background: transparent;
-    /*background: rgba(44,113,184,1);*/
+    background: rgba(44,113,184,1);
     background: url(images/search.png) no-repeat 50% 50%; 
 }
 button:befor {
@@ -140,7 +140,6 @@ button:befor {
 	width:auto;
 	margin: 0 auto;
 	text-align: center;
-	line-height: 650px;
 	border: 1px solid #fff;
 }
 .c2 {
@@ -148,7 +147,6 @@ button:befor {
 	width:auto;
 	margin: 0 auto;
 	text-align: center;
-	line-height: 165px;
 	border: 1px solid #fff;
 }
 .menu2{
@@ -177,9 +175,9 @@ h1 {
 .train-header > a :active {
     color: #fff; /* Цвет активных ссылок */
 } 
-180
-272
 img{
-  /*position: absolute;*/
+  /*position: absolute; 
+  180
+272*/
   
 }
