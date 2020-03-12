@@ -139,15 +139,16 @@ button:befor {
 	height:650px;
 	width:auto;
 	margin: 0 auto;
-	text-align: center;
 	border: 1px solid #fff;
+	position:relative;
+
 }
 .c2 {
 	height:165px;
 	width:auto;
 	margin: 0 auto;
-	text-align: center;
 	border: 1px solid #fff;
+	position: relative;
 }
 .menu2{
 	height:165px;
@@ -175,9 +176,44 @@ h1 {
 .train-header > a :active {
     color: #fff; /* Цвет активных ссылок */
 } 
-img{
-  /*position: absolute; 
-  180
-272*/
-  
+.frame {
+	height:180px;
+	width:100%;
+	position:absolute;
+	top:0;
+	left:0;
+}
+.subframe {
+	position: relative;
+	background-color: rgba(255,255,255,0.75);
+	top:0;
+	left:0;
+	height:180px;
+	width:100%;
+	float:left;
+}
+.foto {
+  position: absolute; 
+  	left:33%;
+	top:27%;
+	/*margin-top: -45px ;
+	margin-left:-55px ;*/
+}
+.fs {
+	height:30px;
+	width:30px;
+	border: 1px solid #2c71b8;
+	line-height: 35px;
+}
+.r1 {
+  position: absolute; 
+  top: 10px;
+  right:10px;
+  text-align: center;
+}
+.r2 {
+  position: absolute; 
+  top: 50px;
+  right:10px;
+  text-align: center;
 }
