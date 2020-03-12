@@ -223,10 +223,14 @@ h1 {
 strong { 
     text-transform: uppercase; /* Заглавные буквы */
 }
-/*.good-text {
+.good-text {
    	color:#fff;
-   	background-color:rgba(44,113,184,0.75); 
-}*/
+   	background-color:rgba(44,113,184,0.75);
+   	font-size: 21px ; 
+}
+.price {
+	font-size: 48px ; 
+}
 .more {
 	height:50px;
 	width:250px;
@@ -234,7 +238,7 @@ strong {
 	color:#fff;
 	text-align: center;
 	line-height: 50px;
-	font-size: 27px;
+	font-size: 21px;
 	border:1px solid #fff;
 	background-color: rgba(44,113,184,1); 
 }
@@ -245,12 +249,12 @@ strong {
 	color:#fff;
 	text-align: center;
 	line-height: 50px;
-	font-size: 27px;
+	font-size: 21px;
 	border:1px solid #fff;
 	background-color: rgba(255,255,255,0.25); 
 }
 .good-info {
-	height:450px;
+	height:0px;
 	color:#fff;
    	background-color:rgba(44,113,184,0.75)
 }
