@@ -179,15 +179,15 @@ h1 {
 .frame {
 	height:180px;
 	width:100%;
-	position:absolute;
+	/*position:absolute;
 	top:0;
-	left:0;
+	left:0;*/
 }
 .subframe {
 	position: relative;
-	background-color: rgba(255,255,255,0.75);
 	top:0;
 	left:0;
+	background-color: rgba(255,255,255,0.75);
 	height:180px;
 	width:100%;
 	float:left;
@@ -216,4 +216,41 @@ h1 {
   top: 50px;
   right:10px;
   text-align: center;
+}
+.t1 {
+	display:block;
+}
+strong { 
+    text-transform: uppercase; /* Заглавные буквы */
+}
+/*.good-text {
+   	color:#fff;
+   	background-color:rgba(44,113,184,0.75); 
+}*/
+.more {
+	height:50px;
+	width:250px;
+	margin:20px;
+	color:#fff;
+	text-align: center;
+	line-height: 50px;
+	font-size: 27px;
+	border:1px solid #fff;
+	background-color: rgba(44,113,184,1); 
+}
+.add {
+	height:50px;
+	width:250px;
+	margin:20px;
+	color:#fff;
+	text-align: center;
+	line-height: 50px;
+	font-size: 27px;
+	border:1px solid #fff;
+	background-color: rgba(255,255,255,0.25); 
+}
+.good-info {
+	height:450px;
+	color:#fff;
+   	background-color:rgba(44,113,184,0.75)
 }
