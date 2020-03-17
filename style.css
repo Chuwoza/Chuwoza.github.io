@@ -111,17 +111,20 @@ button {
 button:befor {
 	content: "\f002";
 }
+.container100 {
+	background: rgba(30,80,134,0.5);
+}
 .slider {
 	height:400px;
 	width:auto;
 	margin: 0 auto;
 	text-align: center;
-	line-height: 400px;
+	line-height: 380px;
 	border: 1px solid #fff;
 }
 .filtr {
-	height:840px;
-	width:auto;
+	height:100%;
+	/*width:auto;*/
 	margin: 0 auto;
 	text-align: center;
 	line-height: 840px;
@@ -141,18 +144,15 @@ button:befor {
 	margin: 0 auto;
 	border: 1px solid #fff;
 	position:relative;
-
 }
 .c2 {
 	height:165px;
-	width:auto;
 	margin: 0 auto;
 	border: 1px solid #fff;
 	position: relative;
 }
 .menu2{
 	height:165px;
-	width:auto;
 	margin: 0 auto;
 	border: 1px solid #fff;
 }
@@ -184,7 +184,7 @@ h2 {
 .frame {
 	height:180px;
 	width:100%;
-	/*position:absolute;
+/*	position:absolute;
 	top:0;
 	left:0;*/
 }
@@ -199,10 +199,10 @@ h2 {
 }
 .foto {
   position: absolute; 
-  	left:33%;
-	top:27%;
-	/*margin-top: -45px ;
-	margin-left:-55px ;*/
+  	left:50%;
+	top:50%;
+	margin-top: -45px ;
+	margin-left:-55px ;
 }
 .fs {
 	height:30px;
@@ -238,7 +238,7 @@ strong {
 }
 .more {
 	height:50px;
-	width:250px;
+	width:210px;
 	margin:20px;
 	color:#fff;
 	text-align: center;
@@ -249,7 +249,7 @@ strong {
 }
 .add {
 	height:50px;
-	width:250px;
+	width:210px;
 	margin:20px;
 	color:#fff;
 	text-align: center;
@@ -262,4 +262,12 @@ strong {
 	height:0px;
 	color:#fff;
    	background-color:rgba(44,113,184,0.75)
+}
+.diagonal-line1 {
+	background-image:linear-gradient(145deg, transparent 50%, white 50%, transparent 52% );
+	background-repeat:no-repeat;
+}
+.diagonal-line2 {
+	background-image:linear-gradient(145deg, transparent 50%, white 50%, transparent 52% );
+	background-repeat:no-repeat;
 }
