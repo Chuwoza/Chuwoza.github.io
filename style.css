@@ -10,7 +10,7 @@ body {
 	width: 1170px;
 	margin: 0 auto;
 }
-.row:after,.menu:after {
+.row:after,.menu:after,.submenu:after {
 	content: "";
 	display: block;
 	clear: both;
@@ -54,11 +54,20 @@ body {
 .menu li:last-child {
 	border-right: 1px solid #2c71b8;
 }
+.submenu {
+	position: relative;
+}
+.menu1{
+	position: absolute;
+	display: none;
+	/*left: -50px;
+	top:100%; */
+}
 .breadcrumbs__list li {
 	float: left;
 	margin:5px;
 }
-.menu a {
+.menu a,.menu1 a {
 	display: block;
 	text-decoration: none;
 	color:#2c71b8;
@@ -132,7 +141,6 @@ input::-webkit-input-placeholder {
 }
 .filtr {
 	height:100%;
-	/*width:auto;*/
 	margin: 0 auto;
 	text-align: center;
 	line-height: 840px;
@@ -183,6 +191,16 @@ h2 {
 	font-size: 30px;
 	font-weight: 500;
 	color:#fff;
+}
+h3{
+	font-size: 36px;
+	font-weight: 300;
+	color:#fff;
+}
+h4{
+	font-size: 21px;
+	font-weight: 300;
+	color:#2c71b8;
 }
 .train-header > a :link {
     color: #fff; /* Цвет ссылок */
@@ -298,4 +316,19 @@ sup {
 	font-weight: bold;
 	border:1px solid #fff;
 	background-color: rgba(255,255,255,0.25); 
+}
+.ful, .load {
+	text-align: center;
+	margin-bottom: 60px;
+	margin-top: 40px;
+}
+footer {
+	background-color: rgba(255,255,255,0.75);
+}
+.footer{
+	padding-bottom: 40px;
+	padding-top: 40px;
+	font-size: 21px;
+	text-align: center;
+	
 }
