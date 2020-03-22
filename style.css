@@ -63,10 +63,6 @@ body {
 	/*left: -50px;
 	top:100%; */
 }
-.breadcrumbs__list li {
-	float: left;
-	margin:5px;
-}
 .menu a,.menu1 a {
 	display: block;
 	text-decoration: none;
@@ -119,8 +115,8 @@ input::-webkit-input-placeholder {
 .button1 {
 	height:30px;
 	width:30px;
-    border: none; /* Убираем рамку */
-    outline: none;
+    border: 1px solid #2c71b8; /* Убираем рамку вокруг кнопки- none */
+    /*outline: none; свечение вокруг кнопки*/
     background: transparent;
     background: rgba(44,113,184,1);
     background: url(images/search.png) no-repeat 50% 50%; 
@@ -177,6 +173,20 @@ input::-webkit-input-placeholder {
 	margin: 0 auto;
 	border: 1px solid #fff;
 }
+.breadcrumbs__list li {
+	float: left;
+	margin:5px;
+}
+.breadcrumbs__item a {
+	color:#acc1dd;
+	text-decoration-line: none;
+	font-size: 14px;
+}
+.breadcrumbs__item span {
+	color:#acc1dd;
+	text-decoration-line: underline ;
+	font-size: 14px;
+}
 .train-header {
 	float:left;
 	margin-top: 20px ;
@@ -202,17 +212,17 @@ h4{
 	font-weight: 300;
 	color:#2c71b8;
 }
-.train-header > a :link {
-    color: #fff; /* Цвет ссылок */
+/*.train-header > a :link {
+    color: #fff; Цвет ссылок 
    }
 
 .train-header > a :visited {
     color: #fff;
-    text-decoration: none;  /*Цвет посещенных ссылок*/ 
+    text-decoration: none;  Цвет посещенных ссылок
    }
 .train-header > a :active {
-    color: #fff; /*Цвет активных ссылок*/ 
-} 
+    color: #fff;  Цвет активных ссылок 
+}*/
 .frame {
 	height:180px;
 	width:100%;
@@ -226,9 +236,11 @@ h4{
 	width:100%;
 	float:left;
 }
-.foto > img{
-  	display:block;
-	margin: 15% auto;
+.foto {
+  	height: 180px;
+  	text-align: center;
+  	line-height: 270px; /*к высоте блока добавляем высоту картинки*/
+
 }
 .fs {
 	height:30px;
@@ -236,6 +248,7 @@ h4{
 	border: 1px solid #2c71b8;
 	line-height: 35px;
 }
+
 .r1 {
   position: absolute; 
   top: 10px;
@@ -243,8 +256,7 @@ h4{
   background: url(images/icon8.png) no-repeat 50% 50%; 
 }
 .r1:hover {
-	background-color:#2c71b8;
-	background: url(images/icon6.png) no-repeat 50% 50%;
+	background: url(images/icon6.png) no-repeat 50% 50% #2c71b8;
 }
 .r2 {
   position: absolute; 
@@ -253,8 +265,7 @@ h4{
   background: url(images/icon5.png) no-repeat 50% 50%;
 }
 .r2:hover {
-	background-color:#2c71b8;
-	background: url(images/icon7.png) no-repeat 50% 50%;
+	background: url(images/icon7.png) no-repeat 50% 50% #2c71b8;
 }
 .good-info {
 	height:0px;
@@ -304,17 +315,7 @@ sup {
 	border:1px solid #fff;
 	background-color: rgba(44,113,184,1); 
 }
-.button3 {
-	height:50px;
-	width:210px;
-	margin:7.5px 20px;
-	color:#fff;
-	text-align: center;
-	line-height: 50px;
-	font-size: 21px;
-	text-transform: uppercase;
-	font-weight: bold;
-	border:1px solid #fff;
+.button2:hover {
 	background-color: rgba(255,255,255,0.25); 
 }
 .load > a {
