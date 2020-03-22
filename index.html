@@ -19,9 +19,17 @@
 				</div>
 				<div class="col-md-6">
 					<nav>
-						<ul class="menu">
+						<ul class="menu row">
 							<li><a href="#">Home</a></li>
-							<li><a href="#">Products</a></li>
+							<li><a href="#">Products</a>
+								<ul class="submenu row">
+									<li><a href="#"></a></li>
+									<li><a href="#"></a></li>
+									<li><a href="#"></a></li>
+									<li><a href="#"></a></li>
+									<li><a href="#"></a></li>
+								</ul>
+							</li>
 							<li><a href="#">Shipping</a></li>
 							<li><a href="#">Payment</a></li>
 						</ul>
@@ -32,12 +40,12 @@
 						<div class="col-md-9">
 							<div class="input-group">
 								<input type="text" required name="q" placeholder="search">
-								<div class="btn-search"><button type="submit"></button></div>
+								<div class="btn-search"><button type="submit" class="button1"></button></div>
 							</div>
 						</div>
 						<div class="col-md-3">
 							<div class="cart">
-								<img src="images/icon (1).png">
+								<img src="images/icon1.png">
 							</div>
 						</div>
 					</div>
@@ -46,68 +54,65 @@
 		</div>
 	</header>
 	<main class="main">
-		<div class="container100">
 			<div class="container slide-bar">
 				<div class="row">
 					<div class="slider">Здесь будет слайдер</div>
   				</div>
-  			</div>
-  		</div>
+  			</div> 
   		<div class="container">
 			<div class="row">
 				<div class="col-md-3">
 					<div class="filtr">Тут будет фильтр</div>
 				</div>
-					<div class="col-md-6 menu2">
-						<div class="">
-							<div class="row">
-								<nav class="train-header" itemscope="" itemtype="#">
-									<ul class="breadcrumbs__list">
-										<li class="breadcrumbs__item" itemprop="name"><a href="#" itemprop="url">Home page</a></li>
-										<li class="breadcrumbs__item" itemprop="name"><a href="#" itemprop="url">Products</a></li>
-										<li class="breadcrumbs__item" itemprop="name"><a href="#" itemprop="url">Laptops and Tablets</a></li>
-									</ul>
-								</nav>
-							</div>
-							<div class=""> <h1> Laptops and Tablets </h1> </div>
+				<div class="col-md-9">
+					<div class="row">
+						<div class="col-md-12">
+							<nav class="train-header" itemscope="" itemtype="#">
+								<ul class="breadcrumbs__list">
+									<li class="breadcrumbs__item" itemprop="name"><a href="#" itemprop="url">Home page</a></li>
+									<li class="breadcrumbs__item" itemprop="name"><a href="#" itemprop="url">Products</a></li>
+									<li class="breadcrumbs__item" itemprop="name"><span>Laptops and Tablets</span></li>
+								</ul>
+							</nav>
 						</div>
 					</div>
-					<div class="col-md-3 menu2"><div class="c2">Sort</div></div>
-					<div class="col-md-3">
-						<div class="c1">
-							<div class="frame row">
-									<div class="subframe diagonal-line1 diagonal-line2">
+					<div class="row">
+						<div class="col-md-8 title"> <h1 class=""> Laptops and Tablets </h1> </div>
+						<div class="col-md-4"><div class="c2">Sort</div></div>
+					</div>
+					<div class="row">
+						<div class="col-md-4">
+							<div class="c1">
+								<div class="frame row">
+									<div class="subframe">
 										<div class="foto"><img src="images/icon (17).png"></div>
-										<div class="r1 fs"><img src="images/icon (6).png"></div>
-										<div class="r2 fs"><img src="images/icon (7).png"></div>
+										<button class="r1 fs"></button>
+										<button class="r2 fs"></button>
 									</div>
-							</div>
-							<div class="good-info">
-								<div>
+								</div>
+								<div class="good-info">
 									<div class="t1 good-text"> <h2>#1 Device Name </h2> </div> 
-								<div class="t1 good-text"> <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p></div>
-								<div class="good-text"><p><strong>type:</strong> Laptop</p> </div>
-								<div class="good-text"><p><strong>screen size:</strong>7 inches</p></div>
-								<div class="good-text"><p><strong>ram:</strong>1 GB</p></div>
-								<div class="price"> $599 <sup>25</sup></div>
-							</div>
-								<div class="more"><strong>more details</strong></div>
-								<div class="add"><p><strong>add to cart</strong>
-								<img src="images/trash.png"><p></div>
+									<div class="t1 good-text"> <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p></div>
+									<div class="good-text"><p><strong>type:</strong> Laptop</p> </div>
+									<div class="good-text"><p><strong>screen size:</strong>7 inches</p></div>
+									<div class="good-text"><p><strong>ram:</strong>1 GB</p></div>
+									<div class="price"> $599 <sup>25</sup></div>
+									<div class="more"><button class="button2">more details</button></div>
+									<div class="more"><button class="button3">add to cart <img src="images/trash.png"></button></div>
+								</div>
 							</div>
 						</div>
+						<div class="col-md-4"><div class="c1">#2</div></div>
+						<div class="col-md-4"><div class="c1">#3</div></div>
+						<div class="col-md-4"><div class="c1">#4</div></div>
+						<div class="col-md-4"><div class="c1">#5</div></div>
+						<div class="col-md-4"><div class="c1">#6</div></div>
+						<div class="col-md-4"><div class="c1">#7</div></div>
+						<div class="col-md-4"><div class="c1">#8</div></div>
+						<div class="col-md-4"><div class="c1">#9</div></div>
 					</div>
-					<div class="col-md-3"><div class="c1">#2</div></div>
-					<div class="col-md-3"><div class="c1">#3</div></div>
-					<div class="col-md-3"><div class="c1">#4</div></div>
-					<div class="col-md-3"><div class="c1">#5</div></div>
-					<div class="col-md-3"><div class="c1">#6</div></div>
-					<div class="col-md-3 ofset-md-3"><div class="c1"> </div></div>
-					<div class="col-md-3"><div class="c1">#7</div></div>
-					<div class="col-md-3"><div class="c1">#8</div></div>
-					<div class="col-md-3"><div class="c1">#9</div></div>
-				</div>
-	  		</div>
+	  			</div>
+  			</div>
   		</div>
 	</main>
 	<footer class="footer">Footer</footer>
