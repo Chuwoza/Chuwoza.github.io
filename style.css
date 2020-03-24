@@ -39,6 +39,10 @@ body {
 	width: 75%;
 	position:relative;
 }
+.col-md-12 {
+	width: 100%;
+	position:relative;
+}
 [class*="col-"] {
 	float: left;
 }
@@ -51,31 +55,72 @@ body {
 	float: left;
 	border-left: 1px solid #2c71b8;
 }
-.menu li:last-child {
+.menu li:hover {
+	border-left: none;
+	border-right: none;
+}
+.menu1 li {
+	width:201%;
+}
+.menu1 {
+	position: absolute;
+	display: none; 
+}
+.menu > li:last-child {
 	border-right: 1px solid #2c71b8;
 }
 .submenu {
 	position: relative;
 }
-.menu1{
-	position: absolute;
-	display: none;
-	/*left: -50px;
-	top:100%; */
+i {
+  border: solid #2c71b8;
+  margin:5px; 
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
 }
+li:hover i {
+	border: solid #fff;
+	 margin:5px; 
+ 	 border-width: 0 3px 3px 0;
+ 	 display: inline-block;
+ 	 padding: 3px;
+}
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
 .menu a,.menu1 a {
 	display: block;
 	text-decoration: none;
 	color:#2c71b8;
 	height: 50px;
-	text-align: center;
+	text-align: center;	
 	line-height: 50px;
 	font-size: 21px;
 	font-weight: 300;
 }
+.menu1 a {
+	text-align: left;
+	padding-left: 30px;
+	background-color: #2c71b8;
+    color: #fff;
+}
+.submenu:hover .menu1 {
+	display: block;
+}
 .menu a:hover {
 	background: #2c71b8;
 	color:white;
+}
+.menu li:hover > a {
+    background: #2c71b8;
+    color: #fff;
+}
+.menu ul li a:hover {
+    background:#fff;
+    color:#2c71b8;
 }
 .logo {
 	margin-top: 7px;
@@ -101,8 +146,7 @@ input {
     border:1px solid #2c71b8;
 }
 input::-webkit-input-placeholder {
-  color: #2c71b8; 
-  font-style: normal;
+  color: #2c71b8;
   font-size: 21px;
   font-weight: 100;
 }
@@ -319,16 +363,16 @@ sup {
 	background-color: rgba(255,255,255,0.25); 
 }
 .load > a {
-	text-align: center;
 	display: block;
+	height:100%;
+	width: 100%;
+	text-align: center;
+	margin-bottom: 60px;
+	margin-top: 40px;
 	text-decoration: none;
 	font-size: 36px;
 	font-weight: 300;
 	color:#fff;
-}
-.load {
-	margin-bottom: 60px;
-	margin-top: 40px;
 }
 footer {
 	background-color: rgba(255,255,255,0.75);
