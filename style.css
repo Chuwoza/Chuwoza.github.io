@@ -137,9 +137,9 @@ li:hover i {
 .menuSort a {
 	display: block;
 	text-decoration: none;
-	color:#2c71b8;
+	color:#fff;
 	height: 50px;
-	text-align: center;	
+	text-align: left;	
 	line-height: 50px;
 	font-size: 21px;
 	font-weight: 300;
