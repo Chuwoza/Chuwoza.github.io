@@ -319,12 +319,18 @@ h4{
 	width:100%;
 	float:left;
 }
+/*к высоте блока добавляем высоту картинки*/
 .foto {
   	height: 180px;
   	text-align: center;
-  	line-height: 270px; /*к высоте блока добавляем высоту картинки*/
+  	line-height: 260px; 
 
 }
+/*.foto1 {
+  	height: 180px;
+  	text-align: center;
+  	line-height: 240px; 
+}*/
 .fs {
 	height:30px;
 	width:30px;
