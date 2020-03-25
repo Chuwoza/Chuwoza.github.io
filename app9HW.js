@@ -27,5 +27,5 @@ if (season === "зима"){
 } else if (season === "oсінь"){
 	alert ("Зараз oсінь")
 } else {
-	alert("Зараз невідомо що!")
+	alert("Такої пори року як " + season + " не існує")
 }
