@@ -6,6 +6,26 @@ body {
 	background-image: url(images/patt.png);
 	/*background-repeat: no-repeat;*/
 }
+h1 {
+	font-size: 48px;
+	font-weight: 500;
+	color:#fff;
+}
+h2 {
+	font-size: 30px;
+	font-weight: 500;
+	color:#fff;
+}
+h3{
+	font-size: 36px;
+	font-weight: 300;
+	color:#fff;
+}
+h4{
+	font-size: 21px;
+	font-weight: 300;
+	color:#2c71b8;
+}
 .container {
 	width: 1170px;
 	margin: 0 auto;
@@ -174,7 +194,7 @@ li:hover i {
 	border-radius: 10px;
 	font-size: 12px;
 }
-input {
+.input_search input{
 	width:200px;
 	height: 40px;
 	padding:10px;
@@ -186,7 +206,7 @@ input {
     font-weight: 100;
     border:1px solid #2c71b8;
 }
-input::-webkit-input-placeholder {
+.input_search input::-webkit-input-placeholder {
   color: #2c71b8;
   font-size: 21px;
   font-weight: 100;
@@ -209,9 +229,6 @@ input::-webkit-input-placeholder {
 .button1:befor {
 	content: "\f002";
 }
-.slide-bar {
-	
-}
 .slider {
 	height:400px;
 	width:auto;
@@ -224,10 +241,64 @@ input::-webkit-input-placeholder {
 .filtr {
 	height:100%;
 	margin: 15px;
-	text-align: center;
-	line-height: 840px;
 	border: 1px solid #fff;
 	background-color: rgba(255,255,255,0.25); 
+}
+.filtr-bar {
+	margin:30px 0 30px 30px;
+	font-size: 21px ;
+}
+.filtr_title {
+	color:#fff;
+}
+.filtr_more {
+	margin: 30px auto;
+}
+.filtr_more a {
+	color: #fff;
+	text-decoration: none;
+}
+input[type="checkbox"] {
+    display: none;
+    position:absolute;
+    height: 0;
+    border: 0;
+}
+input[type="checkbox"] + label{
+	position: relative;
+	display: inline-block;
+}
+label:before {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    left: -10px;
+    top:5px;
+    border:1px solid #fff;
+}
+input[type="checkbox"]:checked + label:before {
+	display: inline-block;
+    background-color: #fff;
+}
+label {
+	padding-left: 10px;
+}
+.checkbox-filter{
+	padding-top: 20px;
+}
+.checkbox-filter_item{
+	display: block;
+	margin-bottom: 23px;
+}
+.checkbox-filter_item a {
+	display: block;
+	text-decoration: none;
+	margin-bottom: 23px;
+	color: #fff;
+	font-weight: 100;
+	position: relative;
 }
 .title {
 	margin: 15px 15px 60px;
@@ -275,26 +346,7 @@ input::-webkit-input-placeholder {
 	float:left;
 	margin: 20px 15px 15px;
 }
-h1 {
-	font-size: 48px;
-	font-weight: 500;
-	color:#fff;
-}
-h2 {
-	font-size: 30px;
-	font-weight: 500;
-	color:#fff;
-}
-h3{
-	font-size: 36px;
-	font-weight: 300;
-	color:#fff;
-}
-h4{
-	font-size: 21px;
-	font-weight: 300;
-	color:#2c71b8;
-}
+
 /*.train-header > a :link {
     color: #fff; Цвет ссылок 
    }
@@ -390,11 +442,11 @@ sup {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	margin: 0 20px 15px;
 }
 .button2 {
 	height:50px;
 	width:210px;
-	margin:7.5px 20px;
 	color:#fff;
 	text-align: center;
 	line-height: 50px;

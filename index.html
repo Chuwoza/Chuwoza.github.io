@@ -18,7 +18,7 @@
 					<div class="logo"><a href=""><img src="images/logo.png" alt=""></a>
 					</div>
 				</div>
-				<div class="col-md-6">
+				<div class="col-md-6">	<!-- Меню-навигация -->
 					<nav>
 						<ul class="menu row">
 							<li><a href="#">Home</a></li>
@@ -38,11 +38,11 @@
 						</ul>
 					</nav>
 				</div>
-				<div class="col-md-3">
+				<div class="col-md-3"> <!-- Поле поиска -->
 					<div class="row">
 						<div class="col-md-9">
-							<div class="input-group">
-								<input type="text" required name="q" placeholder="search">
+							<div class="input_search">
+								<input type="text" required name="q" placeholder="search" class="">
 								<div class="btn-search"><button type="submit" class="button1"></button></div>
 							</div>
 						</div>
@@ -57,15 +57,115 @@
 		</div>
 	</header>
 	<main class="main">
-			<div class="container slide-bar">
+			<div class="container slide-bar"> <!-- Слайдер -->
 				<div class="row">
 					<div class="slider">Здесь будет слайдер</div>
   				</div>
   			</div> 
   		<div class="container">
 			<div class="row">
-				<div class="col-md-3">
-					<div class="filtr">Тут будет фильтр</div>
+				<div class="col-md-3">  <!-- Фильтр -->
+					<div class="filtr"> <!-- Фильтр -->
+						<div class="filtr-bar">
+							<div class="filtr_block"> <!-- Первый блок фильтра -->
+								<span class="filtr_title"><strong>device type</strong></span>
+								<ul class="checkbox-filter">
+									<li class="checkbox-filter_item">
+										<a class="checkbox-filter_link" href="#">
+											<input class="custom_checkbox" type="checkbox" id="Laptop"name="device" value="Laptop">
+											<label for="Laptop">Laptop&nbsp;</label>
+										</a>
+									</li>
+									<li class="checkbox-filter_item">
+										<a class="checkbox-filter_link" href="#">
+											<input class="custom_checkbox" type="checkbox" id="Tablet"name="device" value="Tablet">
+											<label for="Tablet">Tablet&nbsp;</label>
+										</a>
+									</li>
+								</ul>
+							<div>
+							<div class="filtr_block"> <!-- Второй блок фильтра -->
+								<span class="filtr_title"><strong>color</strong></span>
+								<ul class="checkbox-filter">
+									<li class="checkbox-filter_item">
+										<a class="checkbox-filter_link" href="#">
+											<input class="custom_checkbox" type="checkbox" id="Black" name="color" value="black">
+											<label for="Black">Black&nbsp;</label>
+										</a>
+									</li>
+									<li class="checkbox-filter_item">
+										<a class="checkbox-filter_link" href="#">
+											<input class="custom_checkbox" type="checkbox" id="Red" name="color" value="Red">
+											<label for="Red">Red&nbsp;</label>
+										</a>
+									</li>
+									<li class="checkbox-filter_item">
+										<a class="checkbox-filter_link" href="#">
+											<input class="custom_checkbox" type="checkbox" id="Green" name="color" value="Green">
+											<label for="Green">Green&nbsp;</label>
+										</a>
+									</li>
+									<li class="checkbox-filter_item">
+										<a class="checkbox-filter_link" href="#">
+											<input class="custom_checkbox" type="checkbox" id="Blue" name="color" value="Blue">
+											<label for="Blue">Blue&nbsp;</label>
+										</a>
+									</li>
+									<li class="checkbox-filter_item">
+										<a class="checkbox-filter_link" href="#">
+											<input class="custom_checkbox" type="checkbox" id="Orange" name="color" value="Orange">
+											<label for="Orange">Orange&nbsp;</label>
+										</a>
+									</li>
+								</ul>
+							<div>
+							<div class="filtr_block"> <!-- Третий блок фильтра -->
+								<span class="filtr_title"><strong>color</strong></span>
+								<ul class="checkbox-filter">
+									<li class="checkbox-filter_item">
+										<a class="checkbox-filter_link" href="#">
+											<input class="custom_checkbox" type="checkbox" id="1GB" name="ram" value="1GB">
+											<label for="1GB">1GB&nbsp;</label>
+										</a>
+									</li>
+									<li class="checkbox-filter_item">
+										<a class="checkbox-filter_link" href="#">
+											<input class="custom_checkbox" type="checkbox" id="2GB" name="ram" value="2GB">
+											<label for="2GB">2GB&nbsp;</label>
+										</a>
+									</li>
+									<li class="checkbox-filter_item">
+										<a class="checkbox-filter_link" href="#">
+											<input class="custom_checkbox" type="checkbox" id="4GB" name="ram" value="4GB">
+											<label for="4GB">4GB&nbsp;</label>
+										</a>
+									</li>
+									<li class="checkbox-filter_item">
+										<a class="checkbox-filter_link" href="#">
+											<input class="custom_checkbox" type="checkbox" id="6GB" name="ram" value="6GB">
+											<label for="6GB">6GB&nbsp;</label>
+										</a>
+									</li>
+									<li class="checkbox-filter_item">
+										<a class="checkbox-filter_link" href="#">
+											<input class="custom_checkbox" type="checkbox" id="8GB" name="ram" value="8GB">
+											<label for="8GB">8GB&nbsp;</label>
+										</a>
+									</li>
+								</ul>
+							<div>
+							<div class ="filtr_more"><a href="#">Show more options ...</a>
+							</div>
+							<div class="filtr_bottom"><button class="button2">submit</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+			</div>
+				</div>
+			</div>
 				</div>
 				<div class="col-md-9">
 					<div class="row">
