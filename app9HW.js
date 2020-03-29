@@ -1,3 +1,22 @@
+//     Расчет процентной скидки 		
+// let discount = 20;
+// let currency = "грн.";
+// let numQestion = 1;
+
+// function sum (numQestion) {
+// 	let productPrice = +prompt("Введите вартість товару", "");
+// 	let productPriceWithDiscount = productPrice - (productPrice*discount/100);	
+// 	console.log("Стоимость " + numQestion + "товара со скидкой" + " " + productPriceWithDiscount + " "+"грн.");
+// }
+
+
+// sum (1) 
+// sum (2) 
+// sum (100) 
+
+
+
+
     		/* Расчет процента депозита. Задача усложненная!!!
 
    процентная ставка зависит от срока депозита 
@@ -11,19 +30,18 @@
 	let periodDep = +prompt("Введите кол-во месяцев вклада ", "");
 	let sumDep = +prompt("Введите сумму депозита", "");
 	let currency = "грн." ;
-	let stake = 13;
-
+	let stake;
 	if (periodDep <= 6) {
 		let stake = 13;
-	} else if (7 <= periodDep <= 9){
+	} else if ((7 <= periodDep) && (periodDep <= 9)) {
 		let stake = 15;
 	} else if (periodDep > 10){
-		++stake;
-		++stake;
+		let stake = 17;
 	} else {
 		let stake = 1;
 	}
 
+// в этой строке ошибка, но я не понимаю почему....
 	let stakeSum = sumDep*stake/100;
 	let stakeDep = stakeSum/12*periodDep;
 	let amountSumDep = sumDep + stakeDep;
