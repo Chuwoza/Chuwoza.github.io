@@ -382,8 +382,10 @@ select option:hover {
 .foto {
   	height: 180px;
   	text-align: center;
-  	line-height: 260px; 
-
+  	line-height: 180px; 
+}
+.foto > img {
+	vertical-align: middle;
 }
 .fs {
 	height:30px;
