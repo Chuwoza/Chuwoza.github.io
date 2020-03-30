@@ -30,7 +30,9 @@ h4{
 	width: 1170px;
 	margin: 0 auto;
 }
-.row:after,.menu:after,.submenu:after {
+.row:after,
+.menu:after,
+.submenu:after {
 	content: "";
 	display: block;
 	clear: both;
@@ -63,9 +65,9 @@ h4{
 	width: 100%;
 	position:relative;
 }
-[class*="col-"] {
-	float: left;
-}
+
+[class*="col-"] { float: left; }
+
 .header {
 	background-color: rgba(255,255,255,0.75);
 	padding: 25px 0;
@@ -80,20 +82,15 @@ h4{
 	border-left: none;  
 	border-right: none;
 }
-.menu1 li {
-	width:201%;
-}
+.menu1 li { width:201%; }
 .menu1 {
 	position: absolute;
 	display: none; 
 }
 /*Добавляем полоску к последнему пункту меню*/
-.menu > li:last-child {
-	border-right: 1px solid #2c71b8;
-}
-.submenu {
-	position: relative;
-}
+.menu > li:last-child { border-right: 1px solid #2c71b8; }
+
+.submenu { position: relative; }
 
 /*Не понятно почему inline-block*/
 
@@ -113,10 +110,11 @@ li:hover i {
 }
 .down {
     transform: rotate(45deg);
-    /*-webkit-transform: rotate(45deg);*/
+    -webkit-transform: rotate(45deg);
 }
 
-.menu a,.menu1 a {
+.menu a,
+.menu1 a {
 	display: block;
 	text-decoration: none;
 	color:#2c71b8;
@@ -147,17 +145,10 @@ li:hover i {
     background:#fff;
     color:#2c71b8;
 }
-.menuSort li {
-	border: 1px solid #fff;
-}
-.submenuSort{
-	position:absolute;
-	/*display: none;*/
-}
-.menuSort > li {
-	width:100%;
-}
-.menuSort a {
+.menuSort li   { border: 1px solid #fff; }
+.submenuSort   { position:absolute; }
+.menuSort > li { width:100%; }
+.menuSort a    {
 	display: block;
 	text-decoration: none;
 	color:#fff;
@@ -170,10 +161,8 @@ li:hover i {
 /*.submenuSort:hover .menuSort {
 	display: block;
 }*/
-.logo {
-	margin-top: 7px;
-}
-.cart{
+.logo { margin-top: 7px; }
+.cart {
 	position:absolute;
 	right:5px;
 	top:5px;
@@ -224,7 +213,7 @@ li:hover i {
 	height:30px;
 	width:30px;
     border: 1px solid #2c71b8; /* Убираем рамку вокруг кнопки- none */
-    /*outline: none; свечение вокруг кнопки*/
+    /*outline: none;*/  /* свечение вокруг кнопки*/
     background: transparent;
     background: rgba(44,113,184,1);
     background: url(images/search.png) no-repeat 50% 50%; 
@@ -251,12 +240,8 @@ li:hover i {
 	margin:30px 0 30px 30px;
 	font-size: 21px ;
 }
-.filtr_title {
-	color:#fff;
-}
-.filtr_more {
-	margin: 30px auto;
-}
+.filtr_title { color:#fff; }
+.filtr_more  { margin: 30px auto; }
 .filtr_more a {
 	color: #fff;
 	text-decoration: none;
@@ -303,9 +288,8 @@ label {
 	font-weight: 100;
 	position: relative;
 }
-.title {
-	margin: 15px 15px 60px;
-}
+.title { margin: 15px 15px 60px; }
+
 .sort select {
 	font-size: 21px;
 	font-weight: 300;
@@ -316,8 +300,6 @@ label {
 	border: 1px solid #fff;
 	height: 48px;
 }
-
-/*Как изменить Option?*/
 
 option { 	
     height: 48px;
@@ -403,56 +385,45 @@ select option:hover {
   	line-height: 260px; 
 
 }
-/*.foto1 {
-  	height: 180px;
-  	text-align: center;
-  	line-height: 240px; 
-}*/
 .fs {
 	height:30px;
 	width:30px;
 	border: 1px solid #2c71b8;
 	line-height: 35px;
 }
-
 .r1 {
   position: absolute; 
   top: 10px;
   right:10px;
   background: url(images/icon8.png) no-repeat 50% 50%; 
 }
-.r1:hover {
-	background: url(images/icon6.png) no-repeat 50% 50% #2c71b8;
-}
+.r1:hover { background: url(images/icon6.png) no-repeat 50% 50% #2c71b8; }
+
 .r2 {
   position: absolute; 
   top: 50px;
   right:10px;
   background: url(images/icon5.png) no-repeat 50% 50%;
 }
-.r2:hover {
-	background: url(images/icon7.png) no-repeat 50% 50% #2c71b8;
-}
+.r2:hover { background: url(images/icon7.png) no-repeat 50% 50% #2c71b8; }
+
 .good-info {
 	height:0px;
 	color:#fff;
    	display:block;
-}
-p {
-	margin:21px 0 21px 0;
-}
-/*.t1 {
-	display:block;
-}*/
-strong { 
-    text-transform: uppercase; /* Заглавные буквы */
-	font-weight: bold;
 }
 .good-text {
    	color:#fff;
    	font-size: 21px ;
    	margin:10px; 
 }
+p { margin:21px 0 21px 0; }
+
+strong { 
+    text-transform: uppercase; /* Заглавные буквы */
+	font-weight: bold;
+}
+
 .price {
 	font-size: 48px ;
 	font-weight: 700;
@@ -481,9 +452,8 @@ sup {
 	border:1px solid #fff;
 	background-color: rgba(44,113,184,1); 
 }
-.button2:hover {
-	background-color: rgba(255,255,255,0.25); 
-}
+.button2:hover {background-color: rgba(255,255,255,0.25); }
+
 .load > a {
 	display: block;
 	height:100%;
@@ -496,9 +466,7 @@ sup {
 	font-weight: 300;
 	color:#fff;
 }
-footer {
-	background-color: rgba(255,255,255,0.75);
-}
+footer { background-color: rgba(255,255,255,0.75); }
 .footer{
 	padding-bottom: 40px;
 	padding-top: 40px;

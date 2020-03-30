@@ -26,29 +26,51 @@
    */
 
 
-	let nameUser = prompt("Введите свое имя", "");
-	let periodDep = +prompt("Введите кол-во месяцев вклада ", "");
-	let sumDep = +prompt("Введите сумму депозита", "");
-	let currency = "грн." ;
-	let stake;
-	if (periodDep <= 6) {
-		let stake = 13;
-	} else if ((7 <= periodDep) && (periodDep <= 9)) {
-		let stake = 15;
-	} else if (periodDep > 10){
-		let stake = 17;
-	} else {
-		let stake = 1;
-	}
-
+// let nameUser = prompt("Введите свое имя", "");
+// let periodDep = +prompt("Введите кол-во месяцев вклада ", "");
+// let sumDep = +prompt("Введите сумму депозита", "");
+// let currency = "грн." ;
+// let stake;
 // в этой строке ошибка, но я не понимаю почему....
-	let stakeSum = sumDep*stake/100;
-	let stakeDep = stakeSum/12*periodDep;
-	let amountSumDep = sumDep + stakeDep;
+// let stakeSum = sumDep*stake/100;
 
-	console.log(`Уважаемый ${nameUser} , за ${periodDep} мес. Ваша процентная ставка составит ${stake}% . 
-Вы получите: ${stakeDep.toFixed(2) } ${currency} дохода от депозита!
-Общая сумма доступная к снятию: ${amountSumDep.toFixed(2)} ${currency}`);
+// if (periodDep <= 6) {
+// 	let stake = 13;
+// } else if ((7 <= periodDep) && (periodDep <= 9)) {
+// 	let stake = 15;
+// } else if (periodDep > 10){
+// 	let stake = 17;
+// } else {
+// 	let stake = 1;
+// }
+
+// let stakeDep = stakeSum/12*periodDep;
+// let amountSumDep = sumDep + stakeDep;
+
+// console.log(`Уважаемый ${nameUser} , за ${periodDep} мес. Ваша процентная ставка составит ${stake}% . 
+// Вы получите: ${stakeDep.toFixed(2) } ${currency} дохода от депозита!
+// Общая сумма доступная к снятию: ${amountSumDep.toFixed(2)} ${currency}`);
+
+// Вариант Степана
+
+
+let name=prompt("Введіть ваше імя:");
+let sum=+prompt("Введіть суму депозиту:");
+let period=+prompt("Введіть строк дії депозиту (кількість місяців):");
+let sum2;
+let percent;
+if (period<=6){
+    persent=13;
+} else if((period>6) &&(period<=9)){
+    persent=15;
+} else if(period>=10){1
+    persent=17;
+}
+sum2=(persent*period* sum)/(12*100);
+let sum3=sum2+sum;
+console.log("Шановний "+name+"! Сума вашого депозиту: "+sum+" грн.Строк дії: "+period
++" місяців,а Ваша ставка будет:" + persent +  "%. В кінці цього періоду ви отримаєте додатково: "+sum2
++" грн. В загальному: " +sum3+" грн");
 
 
             // Ввести два числа, но отобразить большее
