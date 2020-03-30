@@ -1,5 +1,4 @@
 
-
     		/* Расчет процента депозита. Задача усложненная!!!
 
    процентная ставка зависит от срока депозита 
@@ -7,9 +6,10 @@
    7 >= 9  то 15%годовых
      > 10  то 17%годовых
    */
-/* 	let nameUser = prompt("Введите свое имя", "");
-	let periodDep = +prompt("Введите кол-во месяцев вклада ", "");
-	let sumDep = +prompt("Введите сумму депозита", "");
+ 	let nameUser = prompt("Введите свое имя", "");
+ 	let sumDep = +prompt("Введите сумму депозита", "");
+	let periodDep = +prompt("Укажите срок депозита, кол-во месяцев", "");
+
 	let currency = "грн." ;
 	let stake = 0;
 
@@ -27,9 +27,12 @@
 	let stakeDep = stakeSum/12*periodDep;
 	let amountSumDep = sumDep + stakeDep;
 
-	console.log(`Уважаемый ${nameUser} , за ${periodDep} мес. Ваша процентная ставка составит ${stake}% . 
-	Вы получите: ${stakeDep.toFixed(2) } ${currency} дохода от депозита!
-	Общая сумма доступная к снятию: ${amountSumDep.toFixed(2)} ${currency}`); */
+		alert("Ответ смотри в консоле!");
+
+console.log(`Уважаемый ${nameUser} , за ${periodDep} мес. 
+Ваша процентная ставка составит ${stake}% . 
+Вы получите: ${stakeDep.toFixed(2) } ${currency} дохода от депозита!
+Общая сумма доступная к снятию: ${amountSumDep.toFixed(2)} ${currency}`); 
 
 
 		//Расчет процентной скидки:
