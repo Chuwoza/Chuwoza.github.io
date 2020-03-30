@@ -1,12 +1,44 @@
 
+	// Получить данные от пользователя, и вывести большее число, если 
+
+let а = +prompt("Задайте число №1", "");
+let b = +prompt("Задайте число №2", "");
+let age = +prompt("Укажите свой возраст", "");
+let accessAllowed ;
+let max1 ;
+let min1;	
+
+if ( a > b ) {
+	max1 = a;
+	min1 = b;
+}else {
+	max1 = b;
+	min1 = a;
+}
+	
+if (age >= 18){
+	accessAllowed=1;
+} else if (age < 18) {
+	accessAllowed=0;
+} else {
+	accessAllowed=0;
+}
+
+if (accessAllowed) {
+	alert ("Большее число " + max1 );
+}else {
+	alert ("Меньшее число " + min1 );
+}
+
+
     		/* Расчет процента депозита. Задача усложненная!!!
 
    процентная ставка зависит от срока депозита 
-     >= 6  то 13%годовых
-   7 >= 9  то 15%годовых
-     > 10  то 17%годовых
+     >= 6  то 13% годовых
+   7 >= 9  то 15% годовых
+     > 10  то 17% годовых
    */
-   alert ("Задача по JS!")
+ /*  alert ("Задача по JS!")
  	let nameUser = prompt("Введите свое имя", "");
  	let sumDep = +prompt("Введите сумму депозита", "");
 	let periodDep = +prompt("Укажите срок депозита, кол-во месяцев", "");
@@ -33,7 +65,7 @@
 console.log(`Уважаемый ${nameUser} , за ${periodDep} мес. 
 Ваша процентная ставка составит ${stake}% . 
 Вы получите: ${stakeDep.toFixed(2) } ${currency} дохода от депозита!
-Общая сумма доступная к снятию: ${amountSumDep.toFixed(2)} ${currency}`); 
+Общая сумма доступная к снятию: ${amountSumDep.toFixed(2)} ${currency}`);  */
 
 
 		//Расчет процентной скидки:
