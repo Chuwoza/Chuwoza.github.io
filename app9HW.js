@@ -7,29 +7,29 @@
    7 >= 9  то 15%годовых
      > 10  то 17%годовых
    */
-let nameUser = prompt("Введите свое имя", "");
-let periodDep = +prompt("Введите кол-во месяцев вклада ", "");
-let sumDep = +prompt("Введите сумму депозита", "");
-let currency = "грн." ;
-let stake = 0;
+/* 	let nameUser = prompt("Введите свое имя", "");
+	let periodDep = +prompt("Введите кол-во месяцев вклада ", "");
+	let sumDep = +prompt("Введите сумму депозита", "");
+	let currency = "грн." ;
+	let stake = 0;
 
-if (periodDep <= 6) {
-	stake = 13;
-} else if ((7 <= periodDep) && (periodDep <= 9)) {
-	stake = 15;
-} else if (periodDep > 10){
-	stake = 17;
-} else {
-	stake = 1;
-}
+	if (periodDep <= 6) {
+		stake = 13;
+	} else if ((7 <= periodDep) && (periodDep <= 9)) {
+		stake = 15;
+	} else if (periodDep > 10){
+		stake = 17;
+	} else {
+		stake = 1;
+	}
 
-let stakeSum = sumDep*stake/100;
-let stakeDep = stakeSum/12*periodDep;
-let amountSumDep = sumDep + stakeDep;
+	let stakeSum = sumDep*stake/100;
+	let stakeDep = stakeSum/12*periodDep;
+	let amountSumDep = sumDep + stakeDep;
 
-console.log(`Уважаемый ${nameUser} , за ${periodDep} мес. Ваша процентная ставка составит ${stake}% . 
-Вы получите: ${stakeDep.toFixed(2) } ${currency} дохода от депозита!
-Общая сумма доступная к снятию: ${amountSumDep.toFixed(2)} ${currency}`);
+	console.log(`Уважаемый ${nameUser} , за ${periodDep} мес. Ваша процентная ставка составит ${stake}% . 
+	Вы получите: ${stakeDep.toFixed(2) } ${currency} дохода от депозита!
+	Общая сумма доступная к снятию: ${amountSumDep.toFixed(2)} ${currency}`); */
 
 
 		//Расчет процентной скидки:
