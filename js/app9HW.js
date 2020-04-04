@@ -1,37 +1,42 @@
 
 // 16.1.0 Произвольный цифровой массив
+console.log("Домашнее задание №16:")
 
-let numMas = [1 , 7 , 9 , 14 , 380 , 67 , 87 , 148 , 273, 342];
-console.log(numMas);
+let numArray = [1 , 7 , 9 , 14 , 380 , 67 , 87 , 148 , 273, 342];
+console.log(numArray);
 
 // 16.1.1 Вывести последний елемент из массива 
 
-const lastItem = numMas[numMas.length - 1];
+const lastItem = numArray[numArray.length - 1];
 console.log("Последнее число массива - это " + lastItem);
 
 // 16.1.2 Посчитать сумму элементов в массиве
 
-let result = numMas.reduce((sum, current) => sum + current, 0);
+let result = numArray.reduce((sum, current) => sum + current, 0);
 console.log("Сумма всех чисел в массиве = " + result)
 
 // 16.1.3 Вернуть наибольшее значение из массива
 
-console.log("Наибольшее число в массиве - это " + Math.max.apply(null, numMas));
+function getMaxOfArray(numArray) {
+  return Math.max.apply(null, numArray);
+}
 
-console.log("Второй способ поиска наибольешего числа - это " + Math.max(...numMas));
+console.log("Наибольшее число в массиве - это " + Math.max.apply(null, numArray));
+
+console.log("Второй способ поиска наибольешего числа - это " + Math.max(...numArray));
 
 // - - - - - -ещё вариант расчета: - - - - - - 
 
-// let max = getMaxValue(numMas);
-// let min = getMinValue(numMas);
+// let max = getMaxValue(numArray);
+// let min = getMinValue(numArray);
 // console.log(max);
 // console.log(min);
 
-// function getMaxValue(numMas){
-//     var max = numMas[0]; // берем первый элемент массива
-    // for (var i = 0; i < numMas.length; i++) { // переберем весь массив
+// function getMaxValue(numArray){
+//     var max = numArray[0]; // берем первый элемент массива
+    // for (var i = 0; i < numArray.length; i++) { // переберем весь массив
         // если элемент больше, чем в переменной, то присваиваем его значение переменной
-    //     if (max < numMas[i]) max = numMas[i]; 
+    //     if (max < numArray[i]) max = numArray[i]; 
     // }
     // возвращаем максимальное значение
 //     return max;

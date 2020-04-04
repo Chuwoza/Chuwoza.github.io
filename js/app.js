@@ -1,4 +1,5 @@
 
+console.log("Работает основной файл JS:")
 // Счётчик товара в корзине 
 
 let productsCountEl = document.getElementById("products-count");
