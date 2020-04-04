@@ -3,8 +3,7 @@ let sum=+prompt("Сумма вашик покупок составляет:");
 
 console.log("Сумма покупки со скидкой: "+priceWithDis(sum));
 
-function priceWithDis(sum)
-{
+function priceWithDis(sum){
     let discount;
         if(sum<1000){
             discount=3;
