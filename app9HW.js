@@ -1,3 +1,23 @@
+/* --------2-------*/
+let sum=+prompt("Сумма вашик покупок составляет:");
+
+console.log("Сумма покупки со скидкой: "+priceWithDis(sum));
+
+function priceWithDis(sum)
+{
+    let discount;
+        if(sum<1000){
+            discount=3;
+        }
+        else if(sum>=1000 && sum<=5000){
+            discount=5;
+        }
+        else if(sum>5000){
+            discount=7;
+        }
+    return sum - sum*discount/100;
+}
+
 
 	/* Получить данные от пользователя, и вывести большее число, 
 	если третье значение true, и меньшее - если false */
