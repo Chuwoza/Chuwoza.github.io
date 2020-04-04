@@ -3,7 +3,7 @@
 }
 body {
 	font-family: 'Roboto';
-	background-image: url(images/patt.png);
+	background-image: url(../images/patt.png);
 	/*background-repeat: no-repeat;*/
 }
 h1 {
@@ -162,6 +162,13 @@ li:hover i {
 	display: block;
 }*/
 .logo { margin-top: 7px; }
+.fixed-container {
+	z-index:0; 
+}
+.fixed-cart {
+	position: fixed;
+    z-index: 9999;
+}
 .cart {
 	position:absolute;
 	right:5px;
@@ -170,7 +177,7 @@ li:hover i {
 	width:40px;
 	height:40px;
 	line-height: 40px;
-	background: url(images/icon1.png) no-repeat 50% 50% #fff;
+	background: url(../images/icon1.png) no-repeat 50% 50% #fff;
 }
 .num-goods {
 	position: absolute;
@@ -182,7 +189,7 @@ li:hover i {
 	color:#fff;
 	text-align: center;
 	line-height: 20px;
-	background-color:#2c71b8; 
+	background-color:#e85678 ; /*#2c71b8 - правильный цвет*/
 	border-radius: 10px;
 	font-size: 12px;
 }
@@ -216,7 +223,7 @@ li:hover i {
     /*outline: none;   свечение вокруг кнопки
  	background: transparent;
     background: rgba(44,113,184,1);*/
-    background: url(images/search.png) no-repeat 50% 50%; 
+    background: url(../images/search.png) no-repeat 50% 50%; 
 }
 .button1:befor {
 	content: "\f002";
@@ -397,17 +404,17 @@ select option:hover {
   position: absolute; 
   top: 10px;
   right:10px;
-  background: url(images/icon8.png) no-repeat 50% 50%; 
+  background: url(../images/icon8.png) no-repeat 50% 50%; 
 }
-.r1:hover { background: url(images/icon6.png) no-repeat 50% 50% #2c71b8; }
+.r1:hover { background: url(../images/icon6.png) no-repeat 50% 50% #2c71b8; }
 
 .r2 {
   position: absolute; 
   top: 50px;
   right:10px;
-  background: url(images/icon5.png) no-repeat 50% 50%;
+  background: url(../images/icon5.png) no-repeat 50% 50%;
 }
-.r2:hover { background: url(images/icon7.png) no-repeat 50% 50% #2c71b8; }
+.r2:hover { background: url(../images/icon7.png) no-repeat 50% 50% #2c71b8; }
 
 .good-info {
 	height:0px;
@@ -442,7 +449,7 @@ sup {
 	justify-content: center;
 	margin: 0 20px 15px;
 }
-.button2 {
+.btn_2 {
 	height:50px;
 	width:210px;
 	color:#fff;
@@ -454,7 +461,7 @@ sup {
 	border:1px solid #fff;
 	background-color: rgba(44,113,184,1); 
 }
-.button2:hover {background-color: rgba(255,255,255,0.25); }
+.btn_2:hover {background-color: rgba(255,255,255,0.25); }
 
 .load > a {
 	display: block;

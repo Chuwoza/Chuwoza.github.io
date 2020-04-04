@@ -2,16 +2,16 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta name="author" content="Mango"> <!--  - как вписать автора сайта? -->
+		<!--  - как вписать автора сайта? -->
+	<meta name="author" content="Mango"> 
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="reset.css">
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
 	<title>Shop project-1</title>
 </head>
 <body>
-	<script src="app9HW.js"></script>
 	<header class="header">
 		<div class="container">
 			<div class="row">
@@ -40,16 +40,16 @@
 					</nav>
 				</div>
 				<div class="col-md-3"> <!-- Поле поиска -->
-					<div class="row">
+					<div class="row fixed-container">
 						<div class="col-md-9">
 							<div class="input_search">
 								<input type="text" required name="q" placeholder="search" class="">
 								<div class="btn-search"><button type="submit" class="button1"></button></div>
 							</div>
 						</div>
-						<div class="col-md-3">
+						<div class="col-md-3 fixed-cart">
 							<div class="cart">
-								<div class="num-goods">4</div>
+								<div class="num-goods" id="products-count">0</div>
 							</div>
 						</div>
 					</div>
@@ -159,7 +159,7 @@
 								<a href="#">Show more options ...</a>
 							</div>
 							<div class="filtr_bottom">
-								<button class="button2">submit</button>
+								<button class="btn_2">submit</button>
 							</div>
 						</div>
 					</div>
@@ -207,8 +207,8 @@
 									<div class="good-text"><p><strong>screen size:</strong>7 inches</p></div>
 									<div class="good-text"><p><strong>ram:</strong> 1 GB</p></div>
 									<div class="price"> $599 <sup>25</sup></div>
-									<div class="more"><button class="button2">more details</button></div>
-									<div class="more"><button class="button2">add to cart <img src="images/trash.png"></button></div>
+									<div class="more"><button class="btn_2 btn-more-details">more details</button></div>
+									<div class="more"><button class="btn_2 btn-add-to-cart">add to cart <img src="images/trash.png"></button></div>
 								</div>
 							</div>
 						</div>
@@ -228,8 +228,8 @@
 									<div class="good-text"><p><strong>screen size:</strong>42 inches</p></div>
 									<div class="good-text"><p><strong>ram:</strong> 4 GB</p></div>
 									<div class="price"> $1250 <sup>99</sup></div>
-									<div class="more"><button class="button2">more details</button></div>
-									<div class="more"><button class="button2">add to cart <img src="images/trash.png"></button></div>
+									<div class="more"><button class="btn_2 btn-more-details">more details</button></div>
+									<div class="more"><button class="btn_2 btn-add-to-cart">add to cart <img src="images/trash.png"></button></div>
 								</div>
 							</div>
 						</div>
@@ -249,8 +249,8 @@
 									<div class="good-text"><p><strong>screen size:</strong>3 inches</p></div>
 									<div class="good-text"><p><strong>ram:</strong> 1.5 GB</p></div>
 									<div class="price"> $399 <sup>50</sup></div>
-									<div class="more"><button class="button2">more details</button></div>
-									<div class="more"><button class="button2">add to cart <img src="images/trash.png"></button></div>
+									<div class="more"><button class="btn_2 btn-more-details">more details</button></div>
+									<div class="more"><button class="btn_2 btn-add-to-cart">add to cart <img src="images/trash.png"></button></div>
 								</div>
 							</div>
 						</div>
@@ -270,8 +270,8 @@
 									<div class="good-text"><p><strong>screen size:</strong>3 inches</p></div>
 									<div class="good-text"><p><strong>ram:</strong> 16 GB</p></div>
 									<div class="price"> $599 <sup>25</sup></div>
-									<div class="more"><button class="button2">more details</button></div>
-									<div class="more"><button class="button2">add to cart <img src="images/trash.png"></button></div>
+									<div class="more"><button class="btn_2 btn-more-details">more details</button></div>
+									<div class="more"><button class="btn_2 btn-add-to-cart">add to cart <img src="images/trash.png"></button></div>
 								</div>
 							</div>
 						</div>
@@ -291,8 +291,8 @@
 									<div class="good-text"><p><strong>screen size:</strong>3 inches</p></div>
 									<div class="good-text"><p><strong>ram:</strong> 8 GB</p></div>
 									<div class="price"> $1250 <sup>99</sup></div>
-									<div class="more"><button class="button2">more details</button></div>
-									<div class="more"><button class="button2">add to cart <img src="images/trash.png"></button></div>
+									<div class="more"><button class="btn_2 btn-more-details">more details</button></div>
+									<div class="more"><button class="btn_2 btn-add-to-cart">add to cart <img src="images/trash.png"></button></div>
 								</div>
 							</div>
 						</div>
@@ -312,8 +312,8 @@
 									<div class="good-text"><p><strong>screen size:</strong>3 inches</p></div>
 									<div class="good-text"><p><strong>ram:</strong> 4 GB</p></div>
 									<div class="price"> $399 <sup>50</sup></div>
-									<div class="more"><button class="button2">more details</button></div>
-									<div class="more"><button class="button2">add to cart <img src="images/trash.png"></button></div>
+									<div class="more"><button class="btn_2 btn-more-details">more details</button></div>
+									<div class="more"><button class="btn_2 btn-add-to-cart">add to cart <img src="images/trash.png"></button></div>
 								</div>
 							</div>
 						</div>
@@ -333,8 +333,8 @@
 									<div class="good-text"><p><strong>screen size:</strong>3 inches</p></div>
 									<div class="good-text"><p><strong>ram:</strong> 8 GB</p></div>
 									<div class="price"> $599 <sup>25</sup></div>
-									<div class="more"><button class="button2">more details</button></div>
-									<div class="more"><button class="button2">add to cart <img src="images/trash.png"></button></div>
+									<div class="more"><button class="btn_2 btn-more-details">more details</button></div>
+									<div class="more"><button class="btn_2 btn-add-to-cart">add to cart <img src="images/trash.png"></button></div>
 								</div>
 							</div>
 						</div>
@@ -354,8 +354,8 @@
 									<div class="good-text"><p><strong>screen size:</strong>3 inches</p></div>
 									<div class="good-text"><p><strong>ram:</strong> 4 GB</p></div>
 									<div class="price"> $1250 <sup>99</sup></div>
-									<div class="more"><button class="button2">more details</button></div>
-									<div class="more"><button class="button2">add to cart <img src="images/trash.png"></button></div>
+									<div class="more"><button class="btn_2 btn-more-details">more details</button></div>
+									<div class="more"><button class="btn_2 btn-add-to-cart">add to cart <img src="images/trash.png"></button></div>
 								</div>
 							</div>
 						</div>
@@ -375,8 +375,8 @@
 									<div class="good-text"><p><strong>screen size:</strong>3 inches</p></div>
 									<div class="good-text"><p><strong>ram:</strong> 8 GB</p></div>
 									<div class="price"> $399 <sup>50</sup></div>
-									<div class="more"><button class="button2">more details</button></div>
-									<div class="more"><button class="button2">add to cart <img src="images/trash.png"></button></div>
+									<div class="more"><button class="btn_2 btn-more-details">more details</button></div>
+									<div class="more"><button class="btn_2 btn-add-to-cart">add to cart <img src="images/trash.png"></button></div>
 								</div>
 							</div>
 						</div>
@@ -396,5 +396,8 @@
 	<footer>
 		<div class="footer"> <h4>© Copyright 2020</h4></div>
 	</footer>
+
+	<script src="js/app.js"></script>
+	<!-- 	<script src="app9HW.js"></script> -->
 </body>
 </html>
