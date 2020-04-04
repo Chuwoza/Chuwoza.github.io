@@ -1,4 +1,6 @@
 
+// Счётчик товара в корзине 
+
 let productsCountEl = document.getElementById("products-count");
 console.log(productsCountEl);
 

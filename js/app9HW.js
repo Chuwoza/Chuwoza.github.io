@@ -1,21 +1,62 @@
-/* --------2-------*/
-let sum=+prompt("Сумма вашик покупок составляет:");
 
-console.log("Сумма покупки со скидкой: "+priceWithDis(sum));
+// 16.1.0 Произвольный цифровой массив
 
-function priceWithDis(sum){
-    let discount;
-        if(sum<1000){
-            discount=3;
-        }
-        else if(sum>=1000 && sum<=5000){
-            discount=5;
-        }
-        else if(sum>5000){
-            discount=7;
-        }
-    return sum - sum*discount/100;
-}
+let numMas = [1 , 7 , 9 , 14 , 380 , 67 , 87 , 148 , 273, 342];
+
+// 16.1.1 Вывести последний елемент из массива 
+
+const lastItem = numMas[numMas.length - 1];
+console.log("Последнее число массива - это " + lastItem);
+
+// 16.1.2 Посчитать сумму элементов в массиве
+
+let result = numMas.reduce((sum, current) => sum + current, 0);
+console.log("Сумма всех чисел в массиве = " + result)
+
+// 16.1.3 Вернуть наибольшее значение из массива
+
+console.log("Наибольшее число в массиве - это " + Math.max.apply(null, numMas));
+
+console.log("Второй способ поиска наибольешего числа - это " + Math.max(...numMas));
+
+// - - - - - -ещё вариант расчета: - - - - - - 
+
+// let max = getMaxValue(numMas);
+// let min = getMinValue(numMas);
+// console.log(max);
+// console.log(min);
+
+// function getMaxValue(numMas){
+//     var max = numMas[0]; // берем первый элемент массива
+    // for (var i = 0; i < numMas.length; i++) { // переберем весь массив
+        // если элемент больше, чем в переменной, то присваиваем его значение переменной
+    //     if (max < numMas[i]) max = numMas[i]; 
+    // }
+    // возвращаем максимальное значение
+//     return max;
+
+//---------------------------------------------------------
+
+// Вторая задача 29 марта
+
+
+// let sum=+prompt("Сумма вашик покупок составляет:");
+
+// console.log("Сумма покупки со скидкой: "+priceWithDis(sum));
+
+// function priceWithDis(sum){
+//     let discount;
+//         if(sum<1000){
+//             discount=3;
+//         }
+//         else if(sum>=1000 && sum<=5000){
+//             discount=5;
+//         }
+//         else if(sum>5000){
+//             discount=7;
+//         }
+//     return sum - sum*discount/100;
+// }
 
 
 	/* Получить данные от пользователя, и вывести большее число, 
