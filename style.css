@@ -213,9 +213,9 @@ li:hover i {
 	height:30px;
 	width:30px;
     border: 1px solid #2c71b8; /* Убираем рамку вокруг кнопки- none */
-    /*outline: none;*/  /* свечение вокруг кнопки*/
-    background: transparent;
-    background: rgba(44,113,184,1);
+    /*outline: none;   свечение вокруг кнопки
+ 	background: transparent;
+    background: rgba(44,113,184,1);*/
     background: url(images/search.png) no-repeat 50% 50%; 
 }
 .button1:befor {

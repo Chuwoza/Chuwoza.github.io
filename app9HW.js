@@ -1,35 +1,38 @@
 
-	// Получить данные от пользователя, и вывести большее число, если 
-
-let а = +prompt("Задайте число №1", "");
-let b = +prompt("Задайте число №2", "");
-let age = +prompt("Укажите свой возраст", "");
-let accessAllowed ;
-let max1 ;
-let min1;	
-
-if ( a > b ) {
-	max1 = a;
-	min1 = b;
-}else {
-	max1 = b;
-	min1 = a;
-}
+	/* Получить данные от пользователя, и вывести большее число, 
+	если третье значение true, и меньшее - если false */
+// let x;
+// x = +prompt("Задайте число №1", "");
+// let y;
+// y = +prompt("Задайте число №2", "");
+// let age
+// age = +prompt("Укажите свой возраст", "");
+// let accessAllowed ;
+// let max ;
+// let min ;	
 	
-if (age >= 18){
-	accessAllowed=1;
-} else if (age < 18) {
-	accessAllowed=0;
-} else {
-	accessAllowed=0;
-}
+// if (age >= 18){
+// 	accessAllowed=1;
+// } else if (age < 18) {
+// 	accessAllowed=0;
+// } else {
+// 	accessAllowed=0;
+// }
 
-if (accessAllowed) {
-	alert ("Большее число " + max1 );
-}else {
-	alert ("Меньшее число " + min1 );
-}
 
+// if ( x > y ) {
+// 	max = x;
+// 	min = y;
+// }else {
+// 	max = y;
+// 	min = x;
+// }
+
+// if (accessAllowed) {
+// 	alert ("Большее число " + max );
+// }else {
+// 	alert ("Меньшее число " + min );
+// };
 
     		/* Расчет процента депозита. Задача усложненная!!!
 
