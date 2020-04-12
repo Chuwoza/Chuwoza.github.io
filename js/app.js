@@ -32,7 +32,7 @@ for( let i = 0 ; i < addToCartButtons.length; i++ ) {
 
 let decrementBtn = document.querySelector('.btn-decrement');
 let incrementBtn = document.querySelector('.btn-increment');
-let quantityInput = document.querySelectorAll(".product-quantity input");
+let quantityInput = document.querySelector(".product-quantity input");
 console.log(decrementBtn);
 // ==== проверить правильно ли назначили переменные! ====
 //console.log(decrementBtn);
@@ -57,8 +57,8 @@ function curBtn(numBtn){
 	quantityInput.value = nextCount;
 	if (nextCount <= 1){
 		decrementBtn.disabled = true;
-	}else if(nextCount >= 5){
-	incrementBtn.disabled = true;
+	// }else if(nextCount >= 5){
+	// incrementBtn.disabled = true;
 	}else {
 		decrementBtn.disabled = false;
 	}
@@ -73,16 +73,16 @@ function curBtn(numBtn){
 
 			//add slick slider
 
-$('.slider-block').slick({
-    autoplay:true,
-    autoplaySpeed:2000,
-    dots:true,
-})
+// $('.slider-block').slick({
+//     autoplay:true,
+//     autoplaySpeed:2000,
+//     dots:true,
+// })
 
 // change color
 
-let span = document.querySelector(".text")
+// let span = document.querySelector(".text")
 
-span.addEventListener("keydown",function() {
-    span.style.color = "red"
-})
+// span.addEventListener("keydown",function() {
+//     span.style.color = "red"
+// })
