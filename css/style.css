@@ -228,14 +228,24 @@ li:hover i {
 .button1:befor {
 	content: "\f002";
 }
-.slider {
+.slide-bar {
 	height:400px;
 	width:auto;
 	margin: 15px;
 	text-align: center;
 	line-height: 380px;
-	border: 1px solid #fff;
+/*	border: 1px solid #fff;*/
 	background: rgba(30,80,134,0.5);
+}
+.slider-block > div {
+	padding: 150px 0;
+	color:white;
+	font-size: 50px;
+	text-align: center;
+}
+.slick-prev:before, .slick-next:before {
+	font-size: 30px;
+	color: red;
 }
 .filtr {
 	height:100%;
@@ -424,9 +434,9 @@ select option:hover {
 .good-text {
    	color:#fff;
    	font-size: 21px ;
-   	margin:10px; 
+   	margin: 10px 10px 5px 10px; 
 }
-p { margin:21px 0 21px 0; }
+p { margin:21px 0 7px 0; }
 
 strong { 
     text-transform: uppercase; /* Заглавные буквы */
@@ -437,24 +447,24 @@ strong {
 	font-size: 48px ;
 	font-weight: 700;
 	text-align: center;
-	padding-bottom: 15px;
+	padding-bottom: 10px;
 }
 sup {
-    vertical-align: super;
+    vertical-align: super;                      /* почему это свойство */
     font-size: 30px;
 }
 .more {
-	display: flex;
-	align-items: center;
+	display: flex;                         /* как выровнять без флексов */
+	align-items: center; 
 	justify-content: center;
 	margin: 0 20px 15px;
 }
 .btn_2 {
-	height:50px;
+	height:40px;
 	width:210px;
 	color:#fff;
 	text-align: center;
-	line-height: 50px;
+	line-height: 40px;
 	font-size: 21px;
 	text-transform: uppercase;
 	font-weight: bold;
@@ -463,6 +473,14 @@ sup {
 }
 .btn_2:hover {background-color: rgba(255,255,255,0.25); }
 
+.product-quantity {
+	text-align:center;
+	margin-bottom: 15px;
+}
+.product-quantity input {
+	width:50px;
+	text-align:center;
+}
 .load > a {
 	display: block;
 	height:100%;
@@ -475,7 +493,9 @@ sup {
 	font-weight: 300;
 	color:#fff;
 }
+
 footer { background-color: rgba(255,255,255,0.75); }
+
 .footer{
 	padding-bottom: 40px;
 	padding-top: 40px;

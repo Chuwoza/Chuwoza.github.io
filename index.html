@@ -9,14 +9,18 @@
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/style.css">
-	<title>Shop project-1</title>
+	<!--  slider slick -->
+	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+
+	<title>Shop "Chuwoza"</title>
 </head>
 <body>
 	<header class="header">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-3">
-					<div class="logo"><a href="#"><img src="images/logo.png" alt=""></a>
+					<div class="logo" onclick="alert('Че клацаешь!!!')"><a href="#"><img src="images/logo.png" alt=""></a>
 					</div>
 				</div>
 				<div class="col-md-6">	<!-- Меню-навигация -->
@@ -60,7 +64,11 @@
 	<main class="main">
 			<div class="container slide-bar"> <!-- Слайдер -->
 				<div class="row">
-					<div class="slider">Здесь будет слайдер</div>
+					<div class="slider-block">
+						<div>SLider 1</div>
+						<div>SLider 2</div>
+						<div>SLider 3</div>
+					</div>
   				</div>
   			</div> 
   		<div class="container">
@@ -178,7 +186,8 @@
 					</div>
 					<div class="row">
 						<div class="col-md-8">
-						 	<h1 class="title">Laptops and Tablets </h1> </div>
+						 	<h1 class="title">Laptops and Tablets </h1> 
+						</div>
 						<div class="col-md-4"> <!-- Сортировка -->
 							<div class="c2 sort"> <!-- Сортировка -->
 								<select>
@@ -208,6 +217,11 @@
 									<div class="good-text"><p><strong>ram:</strong> 1 GB</p></div>
 									<div class="price"> $599 <sup>25</sup></div>
 									<div class="more"><button class="btn_2 btn-more-details">more details</button></div>
+									<div class="product-quantity">
+										<button class="btn-decrement">-</button>
+										<input type="text" value='1' readonly>
+										<button class="btn-increment">+</button>
+									</div>
 									<div class="more"><button class="btn_2 btn-add-to-cart">add to cart <img src="images/trash.png"></button></div>
 								</div>
 							</div>
@@ -229,6 +243,11 @@
 									<div class="good-text"><p><strong>ram:</strong> 4 GB</p></div>
 									<div class="price"> $1250 <sup>99</sup></div>
 									<div class="more"><button class="btn_2 btn-more-details">more details</button></div>
+									<div class="product-quantity">
+										<button class="btn-decrement">-</button>
+										<input type="text" value='1' readonly>
+										<button class="btn-increment">+</button>
+									</div>
 									<div class="more"><button class="btn_2 btn-add-to-cart">add to cart <img src="images/trash.png"></button></div>
 								</div>
 							</div>
@@ -250,6 +269,11 @@
 									<div class="good-text"><p><strong>ram:</strong> 1.5 GB</p></div>
 									<div class="price"> $399 <sup>50</sup></div>
 									<div class="more"><button class="btn_2 btn-more-details">more details</button></div>
+									<div class="product-quantity">
+										<button class="btn-decrement">-</button>
+										<input type="text" value='1' readonly>
+										<button class="btn-increment">+</button>
+									</div>
 									<div class="more"><button class="btn_2 btn-add-to-cart">add to cart <img src="images/trash.png"></button></div>
 								</div>
 							</div>
@@ -271,6 +295,11 @@
 									<div class="good-text"><p><strong>ram:</strong> 16 GB</p></div>
 									<div class="price"> $599 <sup>25</sup></div>
 									<div class="more"><button class="btn_2 btn-more-details">more details</button></div>
+									<div class="product-quantity">
+										<button class="btn-decrement">-</button>
+										<input type="text" value='1' readonly>
+										<button class="btn-increment">+</button>
+									</div>
 									<div class="more"><button class="btn_2 btn-add-to-cart">add to cart <img src="images/trash.png"></button></div>
 								</div>
 							</div>
@@ -292,6 +321,11 @@
 									<div class="good-text"><p><strong>ram:</strong> 8 GB</p></div>
 									<div class="price"> $1250 <sup>99</sup></div>
 									<div class="more"><button class="btn_2 btn-more-details">more details</button></div>
+									<div class="product-quantity">
+										<button class="btn-decrement">-</button>
+										<input type="text" value='1' readonly>
+										<button class="btn-increment">+</button>
+									</div>
 									<div class="more"><button class="btn_2 btn-add-to-cart">add to cart <img src="images/trash.png"></button></div>
 								</div>
 							</div>
@@ -313,6 +347,11 @@
 									<div class="good-text"><p><strong>ram:</strong> 4 GB</p></div>
 									<div class="price"> $399 <sup>50</sup></div>
 									<div class="more"><button class="btn_2 btn-more-details">more details</button></div>
+									<div class="product-quantity">
+										<button class="btn-decrement">-</button>
+										<input type="text" value='1' readonly>
+										<button class="btn-increment">+</button>
+									</div>
 									<div class="more"><button class="btn_2 btn-add-to-cart">add to cart <img src="images/trash.png"></button></div>
 								</div>
 							</div>
@@ -334,6 +373,11 @@
 									<div class="good-text"><p><strong>ram:</strong> 8 GB</p></div>
 									<div class="price"> $599 <sup>25</sup></div>
 									<div class="more"><button class="btn_2 btn-more-details">more details</button></div>
+									<div class="product-quantity">
+										<button class="btn-decrement">-</button>
+										<input type="text" value='1' readonly>
+										<button class="btn-increment">+</button>
+									</div>
 									<div class="more"><button class="btn_2 btn-add-to-cart">add to cart <img src="images/trash.png"></button></div>
 								</div>
 							</div>
@@ -355,6 +399,11 @@
 									<div class="good-text"><p><strong>ram:</strong> 4 GB</p></div>
 									<div class="price"> $1250 <sup>99</sup></div>
 									<div class="more"><button class="btn_2 btn-more-details">more details</button></div>
+									<div class="product-quantity">
+										<button class="btn-decrement">-</button>
+										<input type="text" value='1' readonly>
+										<button class="btn-increment">+</button>
+									</div>
 									<div class="more"><button class="btn_2 btn-add-to-cart">add to cart <img src="images/trash.png"></button></div>
 								</div>
 							</div>
@@ -376,6 +425,11 @@
 									<div class="good-text"><p><strong>ram:</strong> 8 GB</p></div>
 									<div class="price"> $399 <sup>50</sup></div>
 									<div class="more"><button class="btn_2 btn-more-details">more details</button></div>
+									<div class="product-quantity">
+										<button class="btn-decrement">-</button>
+										<input type="text" value='1' readonly>
+										<button class="btn-increment">+</button>
+									</div>
 									<div class="more"><button class="btn_2 btn-add-to-cart">add to cart <img src="images/trash.png"></button></div>
 								</div>
 							</div>
@@ -397,10 +451,10 @@
 		<div class="footer"> <h4>© Copyright 2020</h4></div>
 	</footer>
 
-	<script src="js/app16HW.js"></script>
+<!-- 	<script src="js/app16HW.js"></script> -->
 	
 	<script src="js/app.js"></script>
 
-		<!-- <script src="js/app9HW.js"></script> -->
+<!-- 	<script src="js/app9HW.js"></script> -->
 </body>
 </html>

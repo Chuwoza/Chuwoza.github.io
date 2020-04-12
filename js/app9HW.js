@@ -11,7 +11,7 @@ const lastItem = numArray[numArray.length - 1];
 console.log("Последнее число массива - это " + lastItem);
 
 // 16.1.2 Посчитать сумму элементов в массиве
-
+console.log("16.1.2 Посчитать сумму элементов в массиве")
 let result = numArray.reduce((sum, current) => sum + current, 0);
 console.log("Сумма всех чисел в массиве = " + result)
 
@@ -22,8 +22,8 @@ function getMaxOfArray(numArray) {
 }
 
 console.log("Наибольшее число в массиве - это " + Math.max.apply(null, numArray));
-
 console.log("Второй способ поиска наибольешего числа - это " + Math.max(...numArray));
+
 
 // - - - - - -ещё вариант расчета: - - - - - - 
 
