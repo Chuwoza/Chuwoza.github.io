@@ -229,24 +229,33 @@ li:hover i {
 	content: "\f002";
 }
 .slide-bar {
-	height:400px;
-	width:auto;
-	margin: 15px;
-	text-align: center;
-	line-height: 380px;
-/*	border: 1px solid #fff;*/
 	background: rgba(30,80,134,0.5);
 }
 .slider-block > div {
+	height:400px;
 	padding: 150px 0;
 	color:white;
 	font-size: 50px;
 	text-align: center;
+	position:relative;
+}
+.slick-prev {
+	position:absolute;
+	left:15px;
+}
+.slick-next {
+	position:absolute;
+	right:45px;
 }
 .slick-prev:before, .slick-next:before {
 	font-size: 30px;
-	color: red;
+	color: black;
 }
+.slick-dots {
+	position: absolute;
+	bottom: 15px;
+}
+
 .filtr {
 	height:100%;
 	margin: 15px;
