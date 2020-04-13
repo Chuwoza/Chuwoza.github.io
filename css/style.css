@@ -132,6 +132,7 @@ li:hover i {
 }
 .submenu:hover .menu1 {
 	display: block;
+	z-index: 100;
 }
 .menu a:hover {
 	background: #2c71b8;
@@ -233,28 +234,35 @@ li:hover i {
 }
 .slider-block > div {
 	height:400px;
-	padding: 150px 0;
-	color:white;
-	font-size: 50px;
-	text-align: center;
-	position:relative;
+	/*border: 1px solid #fff;*/
+	/*position:relative;*/
 }
 .slick-prev {
-	position:absolute;
-	left:15px;
+	background-color: url(../images/left.png) no-repeat 50% 50% ;
+	/*position:absolute;*/
+/*	left:15px;*/
 }
 .slick-next {
-	position:absolute;
-	right:45px;
+/*	position:absolute;*/
+/*	right:60px;*/
 }
-.slick-prev:before, .slick-next:before {
+/*.slick-prev:before, .slick-next:before {
 	font-size: 30px;
 	color: black;
-}
+}*/
 .slick-dots {
 	position: absolute;
 	bottom: 15px;
 }
+.dot-trumb {
+	display:inline-block;
+	width:15px;
+	height: 15px;
+	background: #333;
+	border-radius: 10px;
+  }
+
+.slick-dots li.slick-active button:before { color: #fff;}        /* Изменить цвет точек слайдера */
 
 .filtr {
 	height:100%;
