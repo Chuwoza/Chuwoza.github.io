@@ -19,48 +19,52 @@
 	<title>Shop "Chuwoza"</title>
 </head>
 <body>
-	<header class="header">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-3">
-					<div class="logo" onclick="alert('Че клацаешь!!!')"><a href="#"><img src="images/logo.png" alt=""></a>
-					</div>
-				</div>
-				<div class="col-md-6">	<!-- Меню-навигация -->
-					<nav>
-						<ul class="menu row">
-							<li><a href="#">Home</a></li>
-							<li class="submenu"><a href="#">Products <i class="down"></i></a>
-								<ul class="menu1 row">
-									<li><a href="#">Lorem ipsum dolor</a></li>
-									<li><a href="#">Sit amet</a></li>
-									<li><a href="#">Consectetur adipisicing</a></li>
-									<li><a href="#">Tempor incididunt</a></li>
-									<li><a href="#">Dolore magna aliqua</a></li>
-									<li><a href="#">Ut enim ad minim veniam</a></li>
-									<li><a href="#">Quis nostrud</a></li>
+	<header>
+		<div class="header-background">
+			<div id="header-block">
+				<div  class="container">
+					<div class="row">
+						<div class="col-md-3">
+							<div class="logo" onclick="alert('Че клацаешь!!!')"><a href="#"><img src="images/logo.png" alt=""></a>
+							</div>
+						</div>
+						<div class="col-md-6">	<!-- Меню-навигация -->
+							<nav>
+								<ul class="menu row">
+									<li><a href="#">Home</a></li>
+									<li class="submenu"><a href="#">Products <i class="down"></i></a>
+										<ul class="menu1 row">
+											<li><a href="#">Lorem ipsum dolor</a></li>
+											<li><a href="#">Sit amet</a></li>
+											<li><a href="#">Consectetur adipisicing</a></li>
+											<li><a href="#">Tempor incididunt</a></li>
+											<li><a href="#">Dolore magna aliqua</a></li>
+											<li><a href="#">Ut enim ad minim veniam</a></li>
+											<li><a href="#">Quis nostrud</a></li>
+										</ul>
+									</li>
+									<li><a href="#">Shipping</a></li>
+									<li><a href="#">Payment</a></li>
 								</ul>
-							</li>
-							<li><a href="#">Shipping</a></li>
-							<li><a href="#">Payment</a></li>
-						</ul>
-					</nav>
+							</nav>
+						</div>
+						<div class="col-md-3"> <!-- Поле поиска -->
+							<div class="row fixed-container">
+								<div class="col-md-9">
+									<div class="input_search">
+										<input type="text" required name="q" placeholder="search" class="">
+										<div class="btn-search"><button type="submit" class="button1"></button></div>
+									</div>
+								</div>
+								<div class="col-md-3 fixed-cart">
+									<div class="cart">
+										<div class="num-goods" id="products-count">0</div>
+									</div>
+								</div>
+							</div>
+		            </div>
+	         	</div>
 				</div>
-				<div class="col-md-3"> <!-- Поле поиска -->
-					<div class="row fixed-container">
-						<div class="col-md-9">
-							<div class="input_search">
-								<input type="text" required name="q" placeholder="search" class="">
-								<div class="btn-search"><button type="submit" class="button1"></button></div>
-							</div>
-						</div>
-						<div class="col-md-3 fixed-cart">
-							<div class="cart">
-								<div class="num-goods" id="products-count">0</div>
-							</div>
-						</div>
-					</div>
-                </div>
 			</div>
 		</div>
 	</header>

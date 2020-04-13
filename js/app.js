@@ -74,24 +74,22 @@
 let products = document.querySelectorAll(".good-info");
 let productsCountEl = document.getElementById("products-count");
 
-// function startData (){
-// 	let currentCount = +quantityInput.value;
-// 	if(currentCount <= 1) {
-// 		decrementBtn.disabled = true;
-// 	}else {
-	
 function applyValue(btn, oppositeBtn, input, value){
 	let nextCount = (+input.value) + value;
 
+	btn.disabled = false;
+	oppositeBtn.disabled = false;
+	input.value = nextCount;
 
-btn.disabled = false;
-oppositeBtn.disabled = false;
-input.value = nextCount;
-
-	if (nextCount <= 1 || nextCount > 4){
+	if (nextCount < 1){
 		btn.disabled = true;
+		oppositeBtn.disabled = false;
+	} else if(nextCount > 4){
+		btn.disabled = true;
+		oppositeBtn.disabled = false;
+	}else{
         return;
-	}
+	};
 };
 
 for(var i = 0; i<products.length;i++){
@@ -100,17 +98,15 @@ for(var i = 0; i<products.length;i++){
     let quantityInput = products[i].querySelector("input");
     let addToCartBtn = products[i].querySelector(".btn-add-to-cart");
 
-console.log(addToCartBtn);
     addToCartBtn.addEventListener("click", function() {
 		productsCountEl.textContent = +productsCountEl.textContent + +quantityInput.value;
 quantityInput.value = 1;
 	});            
 
-   incrementBtn.addEventListener("click", function(e){ applyValue(incrementBtn, decrementBtn, quantityInput, 1);});
-
+	incrementBtn.addEventListener("click", function(e){ applyValue(incrementBtn, decrementBtn, quantityInput, 1);});
 	decrementBtn.addEventListener("click", () => applyValue(decrementBtn, incrementBtn, quantityInput, -1));
 
-}
+};
 
 
 			//add slick slider
@@ -119,7 +115,7 @@ $('.slider-block').slick({
     autoplay:true,
     autoplaySpeed:2000,
     dots:true,
-})
+});
 
 // change color
 

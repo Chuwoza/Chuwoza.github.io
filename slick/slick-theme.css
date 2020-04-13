@@ -23,7 +23,8 @@
     line-height: 0;
 
     position: absolute;
-    top: 50%;
+    top: 45%;
+    z-index: 50;
 
     display: block;
 
@@ -79,38 +80,38 @@
 
 .slick-prev
 {
-    left: -25px;
+    left: 15px;
 }
 [dir='rtl'] .slick-prev
 {
-    right: -25px;
+    right: 60px;
     left: auto;
 }
 .slick-prev:before
 {
-    content: '←';
+    content: url(../images/left1.png);       /* default data '←' */
 }
 [dir='rtl'] .slick-prev:before
 {
-    content: '→';
+    content: url(../images/right1.png);       /* default data '→' */
 }
 
 .slick-next
 {
-    right: -25px;
+    right: 60px;
 }
 [dir='rtl'] .slick-next
 {
     right: auto;
-    left: -25px;
+    left: 15px;
 }
 .slick-next:before
 {
-    content: '→';
+    content: url(../images/right1.png);       /* default data '→' */
 }
 [dir='rtl'] .slick-next:before
 {
-    content: '←';
+    content: url(../images/left1.png);       /* default data '←' */
 }
 
 /* Dots */
