@@ -28,6 +28,7 @@ $('.slider-block').slick({
 let likeCountEl = document.getElementById('like-count-num');
 
 // function getLike(){
+	
 	let likeBtn = document.querySelectorAll('.like-btn');
 
 	for( let i = 0 ; i < likeBtn.length; i++ ) {
@@ -42,7 +43,6 @@ let likeCountEl = document.getElementById('like-count-num');
 			};
 		});
 	};	
-// };
 
 // getLike();
 
