@@ -26,10 +26,8 @@ $('.slider-block').slick({
 			// Add like`s in good
 
 let likeCountEl = document.getElementById('like-count-num');
-console.log(likeCountEl);
 
-
-function getLike(){
+// function getLike(){
 	let likeBtn = document.querySelectorAll('.like-btn');
 
 	for( let i = 0 ; i < likeBtn.length; i++ ) {
@@ -41,13 +39,12 @@ function getLike(){
 				likeCountEl.textContent = +likeCountEl.textContent - 1;
 				likeBtn[i].className = " good-block-btn  like-btn "
 			}else{
-				return(likeBtn);
 			};
 		});
 	};	
-};
+// };
 
-getLike();
+// getLike();
 
 			// Add to cart & change product quantity
 
@@ -57,18 +54,14 @@ let productsCountEl = document.getElementById("products-count");
 function applyValue(btn, oppositeBtn, input, value){
 	let nextCount = (+input.value) + value;
 
-	btn.disabled = false;
-	oppositeBtn.disabled = false;
-	input.value = nextCount;
-
 	if (nextCount < 1){
 		btn.disabled = true;
 		oppositeBtn.disabled = false;
-	} else if(nextCount > 4){
+	} else if(nextCount > 5){
 		btn.disabled = true;
 		oppositeBtn.disabled = false;
 	}else{
-        return;
+        input.value = nextCount;
 	};
 };
 
@@ -80,7 +73,11 @@ for(var i = 0; i<products.length;i++){
 
     addToCartBtn.addEventListener("click", function() {
 		productsCountEl.textContent = +productsCountEl.textContent + +quantityInput.value;
-quantityInput.value = 1;
+	quantityInput.value = 1;
+
+	decrementBtn.disabled = false;
+	incrementBtn.disabled = false;
+
 	});            
 
 	incrementBtn.addEventListener("click", function(e){ applyValue(incrementBtn, decrementBtn, quantityInput, 1);});
