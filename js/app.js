@@ -1,4 +1,95 @@
-			// add to cart  - Счётчик товара в корзине 
+	
+		//add selectize.js
+
+$(document).ready(function() {
+  	//$('.js-example-basic-multiple').select2();
+    $(".chosen-container-single").chosen(); 
+});
+
+
+
+		//add slick slider
+
+$('.slider-block').slick({
+    autoplay:true,
+    autoplaySpeed:2000,
+    dots:true,
+});
+		// change color arrow in slick-slider
+
+// let span = document.querySelector(".text")
+
+// span.addEventListener("keydown",function() {
+//     span.style.color = "red"
+// })
+
+			// Add like`s in good
+
+let likeCountEl = document.getElementById('like-count-num');
+console.log(likeCountEl);
+
+
+function getLike(){
+	let likeBtn = document.querySelectorAll('.like-btn');
+
+	for( let i = 0 ; i < likeBtn.length; i++ ) {
+		likeBtn[i].addEventListener("click", function() {
+			if(likeBtn[i].className === "good-block-btn like-btn"){
+				likeCountEl.textContent = +likeCountEl.textContent +1;
+				likeBtn[i].className = " good-block-btn  like-btn  like-js ";
+			}else if(likeBtn[i].className == " good-block-btn  like-btn  like-js "){
+				likeCountEl.textContent = +likeCountEl.textContent - 1;
+				likeBtn[i].className = " good-block-btn  like-btn "
+			}else{
+				return(likeBtn);
+			};
+		});
+	};	
+};
+
+getLike();
+
+			// Add to cart & change product quantity
+
+let products = document.querySelectorAll(".good-info");
+let productsCountEl = document.getElementById("products-count");
+
+function applyValue(btn, oppositeBtn, input, value){
+	let nextCount = (+input.value) + value;
+
+	btn.disabled = false;
+	oppositeBtn.disabled = false;
+	input.value = nextCount;
+
+	if (nextCount < 1){
+		btn.disabled = true;
+		oppositeBtn.disabled = false;
+	} else if(nextCount > 4){
+		btn.disabled = true;
+		oppositeBtn.disabled = false;
+	}else{
+        return;
+	};
+};
+
+for(var i = 0; i<products.length;i++){
+    let decrementBtn = products[i].querySelector('.btn-decrement');
+    let incrementBtn = products[i].querySelector('.btn-increment');
+    let quantityInput = products[i].querySelector("input");
+    let addToCartBtn = products[i].querySelector(".btn-add-to-cart");
+
+    addToCartBtn.addEventListener("click", function() {
+		productsCountEl.textContent = +productsCountEl.textContent + +quantityInput.value;
+quantityInput.value = 1;
+	});            
+
+	incrementBtn.addEventListener("click", function(e){ applyValue(incrementBtn, decrementBtn, quantityInput, 1);});
+	decrementBtn.addEventListener("click", () => applyValue(decrementBtn, incrementBtn, quantityInput, -1));
+
+};
+
+
+			//   - Счётчик товара в корзине 
 
 // Первый вариант - не правильно будет работать
 
@@ -71,56 +162,4 @@
 
 // 	decrementBtn.addEventListener("click", () => curBtn(-1));
 
-let products = document.querySelectorAll(".good-info");
-let productsCountEl = document.getElementById("products-count");
-
-function applyValue(btn, oppositeBtn, input, value){
-	let nextCount = (+input.value) + value;
-
-	btn.disabled = false;
-	oppositeBtn.disabled = false;
-	input.value = nextCount;
-
-	if (nextCount < 1){
-		btn.disabled = true;
-		oppositeBtn.disabled = false;
-	} else if(nextCount > 4){
-		btn.disabled = true;
-		oppositeBtn.disabled = false;
-	}else{
-        return;
-	};
-};
-
-for(var i = 0; i<products.length;i++){
-    let decrementBtn = products[i].querySelector('.btn-decrement');
-    let incrementBtn = products[i].querySelector('.btn-increment');
-    let quantityInput = products[i].querySelector("input");
-    let addToCartBtn = products[i].querySelector(".btn-add-to-cart");
-
-    addToCartBtn.addEventListener("click", function() {
-		productsCountEl.textContent = +productsCountEl.textContent + +quantityInput.value;
-quantityInput.value = 1;
-	});            
-
-	incrementBtn.addEventListener("click", function(e){ applyValue(incrementBtn, decrementBtn, quantityInput, 1);});
-	decrementBtn.addEventListener("click", () => applyValue(decrementBtn, incrementBtn, quantityInput, -1));
-
-};
-
-
-			//add slick slider
-
-$('.slider-block').slick({
-    autoplay:true,
-    autoplaySpeed:2000,
-    dots:true,
-});
-
-// change color
-
-// let span = document.querySelector(".text")
-
-// span.addEventListener("keydown",function() {
-//     span.style.color = "red"
-// })
+		// finish change product quantity

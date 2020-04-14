@@ -9,12 +9,16 @@
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/reset.css">
 		<!-- 	 Вставляем между резет и основныи стилями -->
+
 										<!--  slider slick -->
 	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
 	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+
+	<link href="chosen/chosen.min.css" rel="stylesheet" />
+
+										<!-- 	selectize  -->
 				<!-- 	 Вставляем между резет и основныи стилями -->
 	<link rel="stylesheet" href="css/style.css">
-
 
 	<title>Shop "Chuwoza"</title>
 </head>
@@ -22,16 +26,28 @@
 	<header>
 		<div class="header-background">
 			<div id="header-block">
-				<div  class="container">
+				<div  class="container">	
 					<div class="row">
 						<div class="col-md-3">
-							<div class="logo" onclick="alert('Че клацаешь!!!')"><a href="#"><img src="images/logo.png" alt=""></a>
+							<div class="row">
+								<div class="col-md-9">
+									<div class="logo" onclick="alert('Внимание!!! Обновляем страницу!!!')">
+										<a href="#"><img src="images/logo.png" alt=""></a>
+									</div>
+								</div>
+								<div class="col-md-3">
+									<div class="like-good">
+										<div class="like-block">
+											<div id="like-count-num" class="like-count">0</div>
+										</div>
+									</div>
+								</div>
 							</div>
 						</div>
 						<div class="col-md-6">	<!-- Меню-навигация -->
 							<nav>
 								<ul class="menu row">
-									<li><a href="#">Home</a></li>
+									<li><a href="https://chuwoza.github.io/">Home</a></li>
 									<li class="submenu"><a href="#">Products <i class="down"></i></a>
 										<ul class="menu1 row">
 											<li><a href="#">Lorem ipsum dolor</a></li>
@@ -49,14 +65,14 @@
 							</nav>
 						</div>
 						<div class="col-md-3"> <!-- Поле поиска -->
-							<div class="row fixed-container">
+							<div class="row">
 								<div class="col-md-9">
 									<div class="input_search">
 										<input type="text" required name="q" placeholder="search" class="">
 										<div class="btn-search"><button type="submit" class="button1"></button></div>
 									</div>
 								</div>
-								<div class="col-md-3 fixed-cart">
+								<div class="col-md-3">
 									<div class="cart">
 										<div class="num-goods" id="products-count">0</div>
 									</div>
@@ -69,7 +85,7 @@
 		</div>
 	</header>
 	<main class="main">
-			<div class="slide-bar"> <!-- Слайдер -->
+			<div class="slide-bar"> <!-- Slider -->
 				<div class="container">
 					<div class="slider-block">
 						<div class="slider-img"><img src="images/slider_01.jpg"></div>
@@ -81,7 +97,7 @@
   			</div> 
   		<div class="container">
 			<div class="row">
-				<div class="col-md-3">  <!-- Фильтр -->
+				<div class="col-md-3">  <!-- Filtr -->
 					<div class="filtr"> <!-- Фильтр -->
 						<div class="filtr-bar">
 							<div class="filtr_block"> <!-- Первый блок фильтра -->
@@ -182,7 +198,7 @@
 				</div>
 				<div class="col-md-9">
 					<div class="row">
-						<div class="col-md-12">
+						<div class="col-md-12"> <!-- Breadcrumbs -->
 							<nav class="train-header" itemscope="" itemtype="#">
 								<ul class="breadcrumbs__list">
 									<li class="breadcrumbs__item" itemprop="name"><a href="#" itemprop="url">Home page</a></li>
@@ -197,29 +213,30 @@
 						 	<h1 class="title">Laptops and Tablets </h1> 
 						</div>
 						<div class="col-md-4"> <!-- Сортировка -->
-							<div class="c2 sort"> <!-- Сортировка -->
-								<select>
-								  <option>sort by price</option>
-								  <option>sort by name</option>
-								  <option>sort by date</option>
-								  <option>sort by popularity</option>
+<!-- 							<div > Сортировка  sort-block -->
+								<select class="chosen-select" name="sort">
+								  <option value></option>
+								  <option value="PRICE">sort by price</option>
+								  <option value="NAME">sort by name</option>
+								  <option value="DATE">sort by date</option>
+								  <option value="POP">sort by popularity</option>
 								</select>
-							</div>
+<!-- 							</div> -->
 						</div>
 					</div>
 					<div class="row">
 						<div class="col-md-4"> <!-- Товар № 1 -->
-							<div class="c1">   <!-- Товар № 1 -->
+							<div class="goods-container">   <!-- Товар № 1 -->
 								<div class="frame row">
-									<div class="subframe">
-										<div class="foto"><img src="images/icon17.png"></div>
-										<button class="r1 fs"></button>
-										<button class="r2 fs"></button>
+									<div class="goods-block-img">
+										<div class="good-foto"><img src="images/icon17.png"></div>
+										<button class="good-block-btn swell-foto"></button>
+										<button class="good-block-btn like-btn"></button>
 									</div>
 								</div>
 								<div class="good-info">
-									<div class="t1 good-text"> <h2>#1 Device Name </h2> </div> 
-									<div class="t1 good-text"> <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p></div>
+									<div class="good-text"> <h2>#1 Device Name </h2> </div> 
+									<div class="good-text"> <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p></div>
 									<div class="good-text"><p><strong>type:</strong> Laptop</p> </div>
 									<div class="good-text"><p><strong>screen size:</strong>7 inches</p></div>
 									<div class="good-text"><p><strong>ram:</strong> 1 GB</p></div>
@@ -235,17 +252,17 @@
 							</div>
 						</div>
 						<div class="col-md-4">  <!-- Товар № 2 -->
-							<div class="c1">  	<!-- Товар № 2 -->
+							<div class="goods-container">  	<!-- Товар № 2 -->
 								<div class="frame row">
-									<div class="subframe">
-										<div class="foto"><img src="images/icon9.png"></div>
-										<button class="r1 fs"></button>
-										<button class="r2 fs"></button>
+									<div class="goods-block-img">
+										<div class="good-foto"><img src="images/icon9.png"></div>
+										<button class="good-block-btn swell-foto"></button>
+										<button class="good-block-btn like-btn"></button>
 									</div>
 								</div>
 								<div class="good-info">
-									<div class="t1 good-text"> <h2>#1 Device Name </h2> </div> 
-									<div class="t1 good-text"> <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p></div>
+									<div class="good-text"> <h2>#1 Device Name </h2> </div> 
+									<div class="good-text"> <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p></div>
 									<div class="good-text"><p><strong>type:</strong> IP-TV player</p> </div>
 									<div class="good-text"><p><strong>screen size:</strong>42 inches</p></div>
 									<div class="good-text"><p><strong>ram:</strong> 4 GB</p></div>
@@ -261,17 +278,17 @@
 							</div>
 						</div>
 						<div class="col-md-4">  <!-- Товар № 3 -->
-							<div class="c1">	<!-- Товар № 3 -->
+							<div class="goods-container">	<!-- Товар № 3 -->
 								<div class="frame row">
-									<div class="subframe">
-										<div class="foto"><img src="images/icon10.png"></div>
-										<button class="r1 fs"></button>
-										<button class="r2 fs"></button>
+									<div class="goods-block-img">
+										<div class="good-foto"><img src="images/icon10.png"></div>
+										<button class="good-block-btn swell-foto"></button>
+										<button class="good-block-btn like-btn"></button>
 									</div>
 								</div>
 								<div class="good-info">
-									<div class="t1 good-text"> <h2>#1 Device Name </h2> </div> 
-									<div class="t1 good-text"> <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p></div>
+									<div class="good-text"> <h2>#1 Device Name </h2> </div> 
+									<div class="good-text"> <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p></div>
 									<div class="good-text"><p><strong>type:</strong> Smart Waches</p> </div>
 									<div class="good-text"><p><strong>screen size:</strong>3 inches</p></div>
 									<div class="good-text"><p><strong>ram:</strong> 1.5 GB</p></div>
@@ -287,17 +304,17 @@
 							</div>
 						</div>
 						<div class="col-md-4">	<!-- Товар № 4 -->
-							<div class="c1">	<!-- Товар № 4 -->
+							<div class="goods-container">	<!-- Товар № 4 -->
 								<div class="frame row">
-									<div class="subframe">
-										<div class="foto"><img src="images/icon16.png"></div>
-										<button class="r1 fs"></button>
-										<button class="r2 fs"></button>
+									<div class="goods-block-img">
+										<div class="good-foto"><img src="images/icon16.png"></div>
+										<button class="good-block-btn swell-foto"></button>
+										<button class="good-block-btn like-btn"></button>
 									</div>
 								</div>
 								<div class="good-info">
-									<div class="t1 good-text"> <h2>#1 Device Name </h2> </div> 
-									<div class="t1 good-text"> <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p></div>
+									<div class="good-text"> <h2>#1 Device Name </h2> </div> 
+									<div class="good-text"> <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p></div>
 									<div class="good-text"><p><strong>type:</strong> MACbook </p> </div>
 									<div class="good-text"><p><strong>screen size:</strong>3 inches</p></div>
 									<div class="good-text"><p><strong>ram:</strong> 16 GB</p></div>
@@ -313,17 +330,17 @@
 							</div>
 						</div>
 						<div class="col-md-4">	<!-- Товар № 5 -->
-							<div class="c1">	<!-- Товар № 5 -->
+							<div class="goods-container">	<!-- Товар № 5 -->
 								<div class="frame row">
-									<div class="subframe">
-										<div class="foto"><img src="images/icon14.png"></div>
-										<button class="r1 fs"></button>
-										<button class="r2 fs"></button>
+									<div class="goods-block-img">
+										<div class="good-foto"><img src="images/icon14.png"></div>
+										<button class="good-block-btn swell-foto"></button>
+										<button class="good-block-btn like-btn"></button>
 									</div>
 								</div>
 								<div class="good-info">
-									<div class="t1 good-text"> <h2>#1 Device Name </h2> </div> 
-									<div class="t1 good-text"> <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p></div>
+									<div class="good-text"> <h2>#1 Device Name </h2> </div> 
+									<div class="good-text"> <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p></div>
 									<div class="good-text"><p><strong>type:</strong> iPOD </p> </div>
 									<div class="good-text"><p><strong>screen size:</strong>3 inches</p></div>
 									<div class="good-text"><p><strong>ram:</strong> 8 GB</p></div>
@@ -339,17 +356,17 @@
 							</div>
 						</div>
 						<div class="col-md-4">	<!-- Товар № 6 -->
-							<div class="c1">	<!-- Товар № 6 -->
+							<div class="goods-container">	<!-- Товар № 6 -->
 								<div class="frame row">
-									<div class="subframe">
-										<div class="foto"><img src="images/icon15.png"></div>
-										<button class="r1 fs"></button>
-										<button class="r2 fs"></button>
+									<div class="goods-block-img">
+										<div class="good-foto"><img src="images/icon15.png"></div>
+										<button class="good-block-btn swell-foto"></button>
+										<button class="good-block-btn like-btn"></button>
 									</div>
 								</div>
 								<div class="good-info">
-									<div class="t1 good-text"> <h2>#1 Device Name </h2> </div> 
-									<div class="t1 good-text"> <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p></div>
+									<div class="good-text"> <h2>#1 Device Name </h2> </div> 
+									<div class="good-text"> <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p></div>
 									<div class="good-text"><p><strong>type:</strong> iPHONE </p> </div>
 									<div class="good-text"><p><strong>screen size:</strong>3 inches</p></div>
 									<div class="good-text"><p><strong>ram:</strong> 4 GB</p></div>
@@ -365,17 +382,17 @@
 							</div>
 						</div>
 						<div class="col-md-4">	<!-- Товар № 7 -->
-							<div class="c1">	<!-- Товар № 7 -->
+							<div class="goods-container">	<!-- Товар № 7 -->
 								<div class="frame row">
-									<div class="subframe">
-										<div class="foto"><img src="images/icon15.png"></div>
-										<button class="r1 fs"></button>
-										<button class="r2 fs"></button>
+									<div class="goods-block-img">
+										<div class="good-foto"><img src="images/icon15.png"></div>
+										<button class="good-block-btn swell-foto"></button>
+										<button class="good-block-btn like-btn"></button>
 									</div>
 								</div>
 								<div class="good-info">
-									<div class="t1 good-text"> <h2>#1 Device Name </h2> </div> 
-									<div class="t1 good-text"> <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p></div>
+									<div class="good-text"> <h2>#1 Device Name </h2> </div> 
+									<div class="good-text"> <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p></div>
 									<div class="good-text"><p><strong>type:</strong> Notebook </p> </div>
 									<div class="good-text"><p><strong>screen size:</strong>3 inches</p></div>
 									<div class="good-text"><p><strong>ram:</strong> 8 GB</p></div>
@@ -391,17 +408,17 @@
 							</div>
 						</div>
 						<div class="col-md-4">	<!-- Товар № 8 -->
-							<div class="c1">	<!-- Товар № 8 -->
+							<div class="goods-container">	<!-- Товар № 8 -->
 								<div class="frame row">
-									<div class="subframe">
-										<div class="foto"><img src="images/icon9.png"></div>
-										<button class="r1 fs"></button>
-										<button class="r2 fs"></button>
+									<div class="goods-block-img">
+										<div class="good-foto"><img src="images/icon9.png"></div>
+										<button class="good-block-btn swell-foto"></button>
+										<button class="good-block-btn like-btn"></button>
 									</div>
 								</div>
 								<div class="good-info">
-									<div class="t1 good-text"> <h2>#1 Device Name </h2> </div> 
-									<div class="t1 good-text"> <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p></div>
+									<div class="good-text"> <h2>#1 Device Name </h2> </div> 
+									<div class="good-text"> <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p></div>
 									<div class="good-text"><p><strong>type:</strong> Notebook </p> </div>
 									<div class="good-text"><p><strong>screen size:</strong>3 inches</p></div>
 									<div class="good-text"><p><strong>ram:</strong> 4 GB</p></div>
@@ -417,17 +434,17 @@
 							</div>
 						</div>
 						<div class="col-md-4">	<!-- Товар № 9 -->
-							<div class="c1">	<!-- Товар № 9 -->
+							<div class="goods-container">	<!-- Товар № 9 -->
 								<div class="frame row">
-									<div class="subframe">
-										<div class="foto"><img src="images/icon10.png"></div>
-										<button class="r1 fs"></button>
-										<button class="r2 fs"></button>
+									<div class="goods-block-img">
+										<div class="good-foto"><img src="images/icon10.png"></div>
+										<button class="good-block-btn swell-foto"></button>
+										<button class="good-block-btn like-btn"></button>
 									</div>
 								</div>
 								<div class="good-info">
-									<div class="t1 good-text"> <h2>#1 Device Name </h2> </div> 
-									<div class="t1 good-text"> <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p></div>
+									<div class="good-text"> <h2>#1 Device Name </h2> </div> 
+									<div class="good-text"> <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p></div>
 									<div class="good-text"><p><strong>type:</strong> Notebook </p> </div>
 									<div class="good-text"><p><strong>screen size:</strong>3 inches</p></div>
 									<div class="good-text"><p><strong>ram:</strong> 8 GB</p></div>
@@ -445,9 +462,7 @@
 					</div>
 					<div class="row">
   						<div class="col-md-12 load">
-  							<!-- <div class="load"> -->
   								<a href="#">Load more ...</a>
-  							<!-- </div> -->
   						</div>
   					</div>
 	  			</div>
@@ -464,6 +479,9 @@
 <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script type="text/javascript" src="slick/slick.min.js"></script>
+
+<!-- <script src="chosen/select2.min.js"></script> -->
+<script src="chosen/chosen.jquery.min.js"></script>
 
 <script src="js/app.js"></script>
 
