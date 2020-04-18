@@ -27,8 +27,9 @@ $('.slider-block').slick({
 
 let likeCountEl = document.getElementById('like-count-num');
 
-// function getLike(){
-	
+
+function getLike(){
+
 	let likeBtn = document.querySelectorAll('.like-btn');
 
 	for( let i = 0 ; i < likeBtn.length; i++ ) {
@@ -40,11 +41,13 @@ let likeCountEl = document.getElementById('like-count-num');
 				likeCountEl.textContent = +likeCountEl.textContent - 1;
 				likeBtn[i].className = " good-block-btn  like-btn "
 			}else{
+				return;
 			};
 		});
 	};	
+};
 
-// getLike();
+getLike();
 
 			// Add to cart & change product quantity
 
@@ -57,7 +60,7 @@ function applyValue(btn, oppositeBtn, input, value){
 	if (nextCount < 1){
 		btn.disabled = true;
 		oppositeBtn.disabled = false;
-	} else if(nextCount > 5){
+	} else if(nextCount >= 6){
 		btn.disabled = true;
 		oppositeBtn.disabled = false;
 	}else{
