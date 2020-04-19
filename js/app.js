@@ -1,21 +1,21 @@
-	
-		//add selectize.js
+"use strict";
 
-$(document).ready(function() {
-  	//$('.js-example-basic-multiple').select2();
-    $(".chosen-container-single").chosen(); 
+//add selectize.js
+
+$(document).ready(function () {
+  // $('.js-example-basic-multiple').select2();
+  $(".chosen-select").chosen();
 });
 
+//add slick slider
 
-
-		//add slick slider
-
-$('.slider-block').slick({
-    autoplay:true,
-    autoplaySpeed:2000,
-    dots:true,
+$(".slider-block").slick({
+  autoplay: true,
+  autoplaySpeed: 2000,
+  dots: true,
 });
-		// change color arrow in slick-slider
+
+// change color arrow in slick-slider
 
 // let span = document.querySelector(".text")
 
@@ -23,73 +23,77 @@ $('.slider-block').slick({
 //     span.style.color = "red"
 // })
 
-			// Add like`s in good
+// change 'like' state
 
-let likeCountEl = document.getElementById('like-count-num');
+let likeCountEl = document.getElementById("like-count-num");
 
-
-function getLike(){
-
-	let likeBtn = document.querySelectorAll('.like-btn');
-
-	for( let i = 0 ; i < likeBtn.length; i++ ) {
-		likeBtn[i].addEventListener("click", function() {
-			if(likeBtn[i].className === "good-block-btn like-btn"){
-				likeCountEl.textContent = +likeCountEl.textContent +1;
-				likeBtn[i].className = " good-block-btn  like-btn  like-js ";
-			}else if(likeBtn[i].className == " good-block-btn  like-btn  like-js "){
-				likeCountEl.textContent = +likeCountEl.textContent - 1;
-				likeBtn[i].className = " good-block-btn  like-btn "
-			}else{
-				return;
-			};
-		});
-	};	
-};
+function getLike() {
+  let likeBtn = document.querySelectorAll(".like-btn");
+  for (let i = 0; i < likeBtn.length; i++) {
+    likeBtn[i].addEventListener("click", function () {
+      if (likeBtn[i].classList.contains("like-js")) {
+        likeBtn[i].classList.remove("like-js");
+        likeCountEl.textContent = +likeCountEl.textContent - 1;
+      } else {
+        likeCountEl.textContent = +likeCountEl.textContent + 1;
+        likeBtn[i].classList.add("like-js");
+      }
+    });
+  }
+}
 
 getLike();
 
-			// Add to cart & change product quantity
+// Add to cart & change product quantity
 
 let products = document.querySelectorAll(".good-info");
 let productsCountEl = document.getElementById("products-count");
 
-function applyValue(btn, oppositeBtn, input, value){
-	let nextCount = (+input.value) + value;
+function applyValue(iBtn, dBtn, input, value) {
+  let nextCount = +input.value + value;
+  // console.log(input.value);
+  input.value = nextCount;
 
-	if (nextCount < 1){
-		btn.disabled = true;
-		oppositeBtn.disabled = false;
-	} else if(nextCount >= 6){
-		btn.disabled = true;
-		oppositeBtn.disabled = false;
-	}else{
-        input.value = nextCount;
-	};
-};
+  function toggelDisabledBtn(Count) {
+    dBtn.disabled = Count <= 1;
+    iBtn.disabled = Count >= 5;
+  }
+  toggelDisabledBtn(nextCount);
+}
 
-for(var i = 0; i<products.length;i++){
-    let decrementBtn = products[i].querySelector('.btn-decrement');
-    let incrementBtn = products[i].querySelector('.btn-increment');
-    let quantityInput = products[i].querySelector("input");
-    let addToCartBtn = products[i].querySelector(".btn-add-to-cart");
+for (var i = 0; i < products.length; i++) {
+  let decrementBtn = products[i].querySelector(".btn-decrement");
+  let incrementBtn = products[i].querySelector(".btn-increment");
+  let quantityInput = products[i].querySelector("input");
+  let addToCartBtn = products[i].querySelector(".btn-add-to-cart");
 
-    addToCartBtn.addEventListener("click", function() {
-		productsCountEl.textContent = +productsCountEl.textContent + +quantityInput.value;
-	quantityInput.value = 1;
+  function startData() {
+    let currentCount = +quantityInput.value;
+    if (currentCount <= 1) {
+      decrementBtn.disabled = true;
+    } else {
+      decrementBtn.disabled = false;
+    }
+  }
+  startData();
+  addToCartBtn.addEventListener("click", function () {
+    productsCountEl.textContent =
+      +productsCountEl.textContent + +quantityInput.value;
+    quantityInput.value = 1;
 
-	decrementBtn.disabled = false;
-	incrementBtn.disabled = false;
+    decrementBtn.disabled = false;
+    incrementBtn.disabled = false;
+  });
 
-	});            
+  incrementBtn.addEventListener("click", function (e) {
+    applyValue(incrementBtn, decrementBtn, quantityInput, 1);
+  });
+  decrementBtn.addEventListener("click", () =>
+    applyValue(incrementBtn, decrementBtn, quantityInput, -1)
+  );
+}
 
-	incrementBtn.addEventListener("click", function(e){ applyValue(incrementBtn, decrementBtn, quantityInput, 1);});
-	decrementBtn.addEventListener("click", () => applyValue(decrementBtn, incrementBtn, quantityInput, -1));
-
-};
-
-
-			//   - Счётчик товара в корзине 
+//   - Счётчик товара в корзине
 
 // Первый вариант - не правильно будет работать
 
@@ -119,7 +123,7 @@ for(var i = 0; i<products.length;i++){
 // 	})
 // }
 
-			//change product quantity - изменить кол-во продукта
+//change product quantity - изменить кол-во продукта
 
 // let decrementBtn = document.querySelectorAll('.btn-decrement');
 // let incrementBtn = document.querySelectorAll('.btn-increment');
@@ -162,4 +166,4 @@ for(var i = 0; i<products.length;i++){
 
 // 	decrementBtn.addEventListener("click", () => curBtn(-1));
 
-		// finish change product quantity
+// finish change product quantity
