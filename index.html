@@ -14,9 +14,8 @@
 	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
 	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 
+										<!-- 	selectize / chosen 1.87  -->
 	<link href="chosen/chosen.min.css" rel="stylesheet" />
-
-										<!-- 	selectize  -->
 				<!-- 	 Вставляем между резет и основныи стилями -->
 	<link rel="stylesheet" href="css/style.css">
 
@@ -213,13 +212,18 @@
 						 	<h1 class="title">Laptops and Tablets </h1> 
 						</div>
 						<div class="col-md-4"> <!-- Сортировка -->
-								<select class="chosen-select" name="sort">
-								  <option value></option>
-								  <option value="PRICE">sort by price</option>
-								  <option value="NAME">sort by name</option>
-								  <option value="DATE">sort by date</option>
-								  <option value="POP">sort by popularity</option>
-								</select>
+							<select class="chosen-select" name="sort">
+								<option value="PRICE">sort by price</option>
+								<option value="NAME">sort by name</option>
+								<option value="DATE">sort by date</option>
+								<option value="POP">sort by popularity</option>
+							</select>
+							<!-- <select class="js-example-basic-multiple" name="sort">
+								<option value="PRICE" selected="selected">sort by price</option>
+								<option value="NAME">sort by name</option>
+								<option value="DATE">sort by date</option>
+								<option value="POP">sort by popularity</option>
+							</select> -->
 						</div>
 					</div>
 					<div class="row">
@@ -480,6 +484,8 @@
 
 <!-- <script src="chosen/select2.min.js"></script> -->
 <script src="chosen/chosen.jquery.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/js/select2.min.js"></script>
 
 <script src="js/app.js"></script>
 

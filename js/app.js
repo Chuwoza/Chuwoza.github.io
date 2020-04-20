@@ -3,15 +3,15 @@
 //add selectize.js
 
 $(document).ready(function () {
-  // $('.js-example-basic-multiple').select2();
-  $(".chosen-select").chosen();
+  // $(".js-example-basic-multiple").select2();
+  $(".chosen-select").chosen({ disable_search_threshold: 10 });
 });
 
 //add slick slider
 
 $(".slider-block").slick({
   autoplay: true,
-  autoplaySpeed: 2000,
+  autoplaySpeed: 10000,
   dots: true,
 });
 
@@ -50,15 +50,15 @@ let products = document.querySelectorAll(".good-info");
 let productsCountEl = document.getElementById("products-count");
 
 function applyValue(iBtn, dBtn, input, value) {
-  let nextCount = +input.value + value;
-  // console.log(input.value);
-  input.value = nextCount;
-
   function toggelDisabledBtn(Count) {
     dBtn.disabled = Count <= 1;
     iBtn.disabled = Count >= 5;
   }
+  let nextCount = +input.value + value;
+  // console.log(input.value);
+
   toggelDisabledBtn(nextCount);
+  input.value = nextCount;
 }
 
 for (var i = 0; i < products.length; i++) {
@@ -66,6 +66,7 @@ for (var i = 0; i < products.length; i++) {
   let incrementBtn = products[i].querySelector(".btn-increment");
   let quantityInput = products[i].querySelector("input");
   let addToCartBtn = products[i].querySelector(".btn-add-to-cart");
+  startData();
 
   function startData() {
     let currentCount = +quantityInput.value;
@@ -75,7 +76,7 @@ for (var i = 0; i < products.length; i++) {
       decrementBtn.disabled = false;
     }
   }
-  startData();
+
   addToCartBtn.addEventListener("click", function () {
     productsCountEl.textContent =
       +productsCountEl.textContent + +quantityInput.value;

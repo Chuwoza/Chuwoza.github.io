@@ -1,238 +1,277 @@
 * {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 body {
-	font-family: 'Roboto';
-	background-image: url(../images/patt.png);
+  font-family: "Roboto";
+  background-image: url(../images/patt.png);
 }
 h1 {
-	font-size: 48px;
-	font-weight: 500;
-	color:#fff;
+  font-size: 48px;
+  font-weight: 500;
+  color: #fff;
 }
 h2 {
-	font-size: 30px;
-	font-weight: 500;
-	color:#fff;
+  font-size: 30px;
+  font-weight: 500;
+  color: #fff;
 }
-h3{
-	font-size: 36px;
-	font-weight: 300;
-	color:#fff;
+h3 {
+  font-size: 36px;
+  font-weight: 300;
+  color: #fff;
 }
-h4{
-	font-size: 21px;
-	font-weight: 300;
-	color:#2c71b8;
+h4 {
+  font-size: 21px;
+  font-weight: 300;
+  color: #2c71b8;
 }
 .col-md-1 {
-	width: 8.333%;
-	position:relative;
+  width: 8.333%;
+  position: relative;
 }
 .col-md-2 {
-	width: 16.6666667%;
-	position:relative;
+  width: 16.6666667%;
+  position: relative;
 }
 .col-md-3 {
-	width: 25%;
-	position:relative;
+  width: 25%;
+  position: relative;
 }
 .col-md-4 {
-	width: 33.333334%;
-	position:relative;
+  width: 33.333334%;
+  position: relative;
 }
 .col-md-6 {
-	width: 50%;
-	position:relative;
+  width: 50%;
+  position: relative;
 }
 .col-md-8 {
-	width: 66.666667%;
-	position:relative;
+  width: 66.666667%;
+  position: relative;
 }
 .col-md-9 {
-	width: 75%;
-	position:relative;
+  width: 75%;
+  position: relative;
 }
 .col-md-12 {
-	width: 100%;
-	position:relative;
+  width: 100%;
+  position: relative;
 }
-[class*="col-"] { float: left; }
+[class*="col-"] {
+  float: left;
+}
 
 .row:after,
 .menu:after,
 .submenu:after {
-	content: "";
-	display: block;
-	clear: both;
+  content: "";
+  display: block;
+  clear: both;
 }
 .container {
-	width: 1170px;
-	margin: 0 auto;
+  width: 1170px;
+  margin: 0 auto;
 }
 
 header {
-	position: fixed;
-	top:0;
-	left: 0;
-	z-index: 100;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
 }
 
-.header-background { 
-	background-image: url(../images/patt.png);
-	width: 100%;
-	position: fixed;
-	z-index: 1000;
+.header-background {
+  background-image: url(../images/patt.png);
+  width: 100%;
+  position: fixed;
+  z-index: 1000;
 }
 
 #header-block {
-	padding: 25px 0;
-	background-color: rgba(255,255,255,0.75);
+  padding: 25px 0;
+  background-color: rgba(255, 255, 255, 0.75);
 }
 
 .like-block {
-	width:45px;
-	height:45px;
-	line-height: 40px;
-	position:absolute;
-	top:5px;
-	right: 10px;
-	background: url(../images/icon7.png) no-repeat 50% 20% #2c71b8;
-	border-radius: 22px;
+  width: 45px;
+  height: 45px;
+  line-height: 40px;
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  background: url(../images/icon7.png) no-repeat 50% 20% #2c71b8;
+  border-radius: 22px;
 }
 .like-count {
-	width:27px;
-	height: 17px;
-	position: absolute;
-	top:14px;
-	left:9px;
-	text-align:center;
-	color:#fff;
+  width: 27px;
+  height: 17px;
+  position: absolute;
+  top: 14px;
+  left: 9px;
+  text-align: center;
+  color: #fff;
 }
 
 .menu li {
-	width: 25%;
-	float: left;
-	border-left: 1px solid #2c71b8;
+  width: 25%;
+  float: left;
+  border-left: 1px solid #2c71b8;
 }
-								/*убираем полоски которые мы добавляли в верхнем меню*/
+/*убираем полоски которые мы добавляли в верхнем меню*/
 .menu li:hover {
-	border-left: none;  
-	border-right: none;
+  border-left: none;
+  border-right: none;
 }
-.menu1 li { width:201%; }
+.menu1 li {
+  width: 201%;
+}
 .menu1 {
-	position: absolute;
-	display: none; 
+  position: absolute;
+  display: none;
 }
-                				/*Добавляем полоску к последнему пункту меню*/
-.menu > li:last-child { border-right: 1px solid #2c71b8; }
+/*Добавляем полоску к последнему пункту меню*/
+.menu > li:last-child {
+  border-right: 1px solid #2c71b8;
+}
 
-.submenu { position: relative; }
+.submenu {
+  position: relative;
+}
 
 i {
   border: solid #2c71b8;
-  margin:5px; 
+  margin: 5px;
   border-width: 0 3px 3px 0;
   display: inline-block;
   padding: 3px;
 }
 li:hover i {
-	border: solid #fff;
-	margin:5px; 
- 	border-width: 0 3px 3px 0;
- 	display: inline-block;
- 	padding: 3px;
+  border: solid #fff;
+  margin: 5px;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
 }
+b {
+  border: solid #fff;
+  /* margin: 5px; */
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+/* .chosen-container:hover b {
+  border: solid #2c71b8;
+  margin: 5px;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+} */
 .down {
-    transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
 }
-
+.chosen-container-single .chosen-single div {
+  width: 10px;
+  height: 10px;
+}
+.chosen-single > div {
+  width: 5px;
+  height: auto;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
 .menu a,
 .menu1 a {
-	display: block;
-	text-decoration: none;
-	color:#2c71b8;
-	height: 50px;
-	text-align: center;	
-	line-height: 50px;
-	font-size: 21px;
-	font-weight: 300;
+  display: block;
+  text-decoration: none;
+  color: #2c71b8;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  font-size: 21px;
+  font-weight: 300;
 }
 .menu1 a {
-	text-align: left;
-	padding-left: 20px;
-	background-color: #2c71b8;
-    color: #fff;
+  text-align: left;
+  padding-left: 20px;
+  background-color: #2c71b8;
+  color: #fff;
 }
 .submenu:hover .menu1 {
-	display: block;
-	z-index: 100;       /* чтобы меню было над слайдером */
+  display: block;
+  z-index: 500; /* чтобы меню было над слайдером */
 }
 .menu a:hover {
-	background: #2c71b8;
-	color:white;
+  background: #2c71b8;
+  color: white;
 }
 .menu li:hover > a {
-    background: #2c71b8;
-    color: #fff;
+  background: #2c71b8;
+  color: #fff;
 }
 .menu ul li a:hover {
-    background:#fff;
-    color:#2c71b8;
+  background: #fff;
+  color: #2c71b8;
 }
-.menuSort li   { border: 1px solid #fff; }
-.submenuSort   { position:absolute; }
-.menuSort > li { width:100%; }
-.menuSort a    {
-	display: block;
-	text-decoration: none;
-	color:#fff;
-	height: 50px;
-	text-align: left;	
-	line-height: 50px;
-	font-size: 21px;
-	font-weight: 300;
+.menuSort li {
+  border: 1px solid #fff;
+}
+.submenuSort {
+  position: absolute;
+}
+.menuSort > li {
+  width: 100%;
+}
+.menuSort a {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  height: 50px;
+  text-align: left;
+  line-height: 50px;
+  font-size: 21px;
+  font-weight: 300;
 }
 
-.logo { margin-top: 7px; }
+.logo {
+  margin-top: 7px;
+}
 
 .cart {
-	position:absolute;
-	right:5px;
-	top:5px;
-	border:none;
-	width:40px;
-	height:40px;
-	line-height: 40px;
-	background: url(../images/icon1.png) no-repeat 50% 50% #fff;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  border: none;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  background: url(../images/icon1.png) no-repeat 50% 50% #fff;
 }
 .num-goods {
-	position: absolute;
-	left:-10px;
-	top:-10px;
-	z-index: 10;
-	width: 20px;
-	height: 20px;
-	color:#fff;
-	text-align: center;
-	line-height: 20px;
-	background-color:#2c71b8 ; /*#2c71b8 - правильный цвет*/
-	border-radius: 10px;
-	font-size: 12px;
+  position: absolute;
+  left: -10px;
+  top: -10px;
+  z-index: 10;
+  width: 20px;
+  height: 20px;
+  color: #fff;
+  text-align: center;
+  line-height: 20px;
+  background-color: #2c71b8; /*#2c71b8 - правильный цвет*/
+  border-radius: 10px;
+  font-size: 12px;
 }
-.input_search input{
-	width:200px;
-	height: 40px;
-	padding:10px;
-	margin:5px 5px 5px 30px;
-	background: transparent;
-	outline: none;
-	color:#2c71b8;
-	font-size: 21px;
-    font-weight: 100;
-    border:1px solid #2c71b8;
+.input_search input {
+  width: 200px;
+  height: 40px;
+  padding: 10px;
+  margin: 5px 5px 5px 30px;
+  background: transparent;
+  outline: none;
+  color: #2c71b8;
+  font-size: 21px;
+  font-weight: 100;
+  border: 1px solid #2c71b8;
 }
 .input_search input::-webkit-input-placeholder {
   color: #2c71b8;
@@ -240,192 +279,268 @@ li:hover i {
   font-weight: 100;
 }
 .btn-search {
-	position:absolute;
-	right:-5px;
-	top:9px;
-	background: #2c71b8;
+  position: absolute;
+  right: -5px;
+  top: 9px;
+  background: #2c71b8;
 }
 .button1 {
-	height:30px;
-	width:30px;
-    border: 1px solid #2c71b8; /* Убираем рамку вокруг кнопки- none */
-    /*outline: none;   свечение вокруг кнопки
+  height: 30px;
+  width: 30px;
+  border: 1px solid #2c71b8; /* Убираем рамку вокруг кнопки- none */
+  /*outline: none;   свечение вокруг кнопки
  	background: transparent;
     background: rgba(44,113,184,1);*/
-    background: url(../images/search.png) no-repeat 50% 50%; 
+  background: url(../images/search.png) no-repeat 50% 50%;
 }
 .button1:befor {
-	content: "\f002";
+  content: "\f002";
 }
 .slide-bar {
-	background: rgba(30,80,134,0.5);
-	padding-top: 100px;
+  background: rgba(30, 80, 134, 0.5);
+  padding-top: 100px;
 }
 .slider-block {
-	position: relative;
-	overflow: hidden;
+  position: relative;
+  overflow: hidden;
+}
+
+/* styling slick */
+
+.slick-prev:before {
+  content: url(../images/left.png);
+}
+[dir="rtl"] .slick-prev:before {
+  content: url(../images/right.png);
+}
+.slick-next:before {
+  content: url(../images/right.png);
+}
+[dir="rtl"] .slick-next:before {
+  content: url(../images/left.png);
 }
 .slick-arrow {
-	position: absolute;
-	opacity: 0;
-	transition: 0.3s ease;
+  position: absolute;
+  opacity: 1;
+  transition: 0.5s ease;
 }
+.slick-prev,
+.slick-next {
+  top: 45%;
+  z-index: 50;
+}
+
 .slick-prev {
-	left: -50px;
+  left: -80px;
 }
 .slick-next {
-	right: -80px;
+  right: -80px;
 }
 .slider-block:hover .slick-prev {
-	left: 15px;
-    opacity: 1;
+  left: 15px;
+  opacity: 1;
 }
 .slider-block:hover .slick-next {
-	right: 60px;
-    opacity: 1;
+  right: 60px;
+  opacity: 1;
 }
 .slick-dots {
-	position: absolute;
-	bottom: 15px;
+  position: absolute;
+  bottom: 15px;
 }
-.dot-trumb {
-	display:inline-block;
-	width:15px;
-	height: 15px;
-	background: #333;
-	border-radius: 10px;
-  }
-
-.slick-dots li.slick-active button:before { color: #fff;}        /* Изменить цвет точек слайдера */
+/* Изменить цвет точек слайдера */
+.slick-dots li button:before {
+  color: #fff;
+}
+.slick-dots li.slick-active button:before {
+  color: #2c71b8;
+}
+/* .slick-dots li {
+  background-color: #2c71b8;
+  border-radius: 10px;
+} */
+.slick-dots li button:before {
+  opacity: 1;
+}
+/*====================  filtr  ================*/
 
 .filtr {
-	height:100%;
-	margin: 15px;
-	border: 1px solid #fff;
-	background-color: rgba(255,255,255,0.25); 
+  height: 100%;
+  margin: 15px;
+  border: 1px solid #fff;
+  background-color: rgba(255, 255, 255, 0.25);
 }
 .filtr-bar {
-	margin:30px 0 30px 30px;
-	font-size: 21px ;
+  margin: 30px 0 30px 30px;
+  font-size: 21px;
 }
-.filtr_title { color:#fff; }
-.filtr_more  { margin: 30px auto; }
+.filtr_title {
+  color: #fff;
+}
+.filtr_more {
+  margin: 30px auto;
+}
 .filtr_more a {
-	color: #fff;
-	text-decoration: none;
+  color: #fff;
+  text-decoration: none;
 }
 input[type="checkbox"] {
-    display: none;
-    position:absolute;
-    height: 0;
-    border: 0;
+  display: none;
+  position: absolute;
+  height: 0;
+  border: 0;
 }
-input[type="checkbox"] + label{
-	position: relative;
-	display: inline-block;
+input[type="checkbox"] + label {
+  position: relative;
+  display: inline-block;
 }
 label:before {
-    content: "";
-    display: block;
-    width: 10px;
-    height: 10px;
-    position: absolute;
-    left: -10px;
-    top:5px;
-    border:1px solid #fff;
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  left: -10px;
+  top: 5px;
+  border: 1px solid #fff;
 }
 input[type="checkbox"]:checked + label:before {
-	display: inline-block;
-    background-color: #fff;
+  display: inline-block;
+  background-color: #fff;
 }
 label {
-	padding-left: 10px;
+  padding-left: 10px;
 }
-.checkbox-filter{
-	padding-top: 20px;
+.checkbox-filter {
+  padding-top: 20px;
 }
-.checkbox-filter_item{
-	display: block;
-	margin-bottom: 23px;
+.checkbox-filter_item {
+  display: block;
+  margin-bottom: 23px;
 }
 .checkbox-filter_item a {
-	display: block;
-	text-decoration: none;
-	margin-bottom: 23px;
-	color: #fff;
-	font-weight: 100;
-	position: relative;
+  display: block;
+  text-decoration: none;
+  margin-bottom: 23px;
+  color: #fff;
+  font-weight: 100;
+  position: relative;
 }
-.title { margin: 15px 15px 60px; }
-
-														/* Блок сортировки*/
-
-.sort-block {
-	margin: 15px;
-	position: relative;
-}
-.sort-block select {
-	font-size: 21px;
-	font-weight: 300;
-	padding: 10px;
-	background-color: #2c71b8;
-	color: #fff;
-	width: 100%;
-	border: 1px solid #fff;
-	height: 48px;
-}
-select {
-	font-size: 21px;
-	font-weight: 300;
-	padding: 10px;
-	background-color: #2c71b8;
-	color: #fff;
-	width: 100%;
-	border: 1px solid #fff;
-	height: 48px;
-}
-option { 	
-    height: 48px;
-    border: 1px solid #fff;
-}
-select option:hover {
-    background-color:
-     #fff;
-    color: #2c71b8;
-    height: 48px;
-    border: 1px solid #fff;
+.title {
+  margin: 15px 15px 60px;
 }
 
-													/*=====================*/
+/*  =  = = = = = = = = = = =   Блок сортировки   = = = = = = = = = = = */
+
+.chosen-container {
+  width: 90% !important;
+  height: 40px;
+  line-height: 40px;
+  margin: 15px 15px;
+  position: relative;
+  padding: 0;
+  background-color: #2c71b8;
+  border: 1px solid #fff;
+}
+.chosen-drop {
+  left: 0;
+  top: 100%;
+}
+.chosen-search > .chosen-search-input {
+  display: none;
+}
+.chosen-container-single .chosen-single {
+  height: 40px;
+  color: #fff;
+}
+.chosen-container-active .chosen-single {
+  border: none;
+}
+.chosen-container-active .chosen-with-drop .chosen-single {
+  border: 0;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  background-image: none;
+  box-shadow: none;
+}
+.chosen-container .chosen-results {
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+.chosen-container .chosen-results li {
+  line-height: 40px;
+  padding: 0 6px;
+  font-size: 22px;
+}
+.chosen-container .chosen-results li.highlighted {
+  color: #2c71b8;
+  background-color: #fff;
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(20%, #f3f6fc),
+    color-stop(90%, #ced0d3)
+  );
+  background-image: linear-gradient(#ced3db 20%, #dce1e9 90%);
+}
+.chosen-container-single .chosen-single div b {
+  display: inline-block;
+  height: 10px;
+  width: 10px;
+  background: 0;
+}
+.chosen-container > a {
+  color: rgb(0, 0, 0);
+  font-size: 22px;
+  padding: 0;
+}
+.chosen-container-single .chosen-drop {
+  border: 1px solid #fff;
+  background-color: #2c71b8;
+  color: #fff;
+  margin: 0;
+}
+.chosen-container .chosen-drop {
+  background-color: #2c71b8;
+}
+.chosen-container-single .chosen-default {
+  color: #fff;
+  border: none;
+  background-color: #2c71b8;
+}
+
+/*=====================*/
 
 .goods-container {
-	height:650px;
-	width:auto;
-	margin: 15px;
-	border: 1px solid #fff;
-	position:relative;
-	background-color:rgba(44,113,184,0.75);
+  height: 650px;
+  width: auto;
+  margin: 15px;
+  border: 1px solid #fff;
+  position: relative;
+  background-color: rgba(44, 113, 184, 0.75);
 }
 
- /*Здесь вставить стили меню*/
+/*Здесь вставить стили меню*/
 
 .breadcrumbs__list li {
-	float: left;
-	margin:5px;
+  float: left;
+  margin: 5px;
 }
 .breadcrumbs__item a {
-	color:#acc1dd;
-	text-decoration-line: none;
-	font-size: 14px;
+  color: #acc1dd;
+  text-decoration-line: none;
+  font-size: 14px;
 }
 .breadcrumbs__item span {
-	color:#acc1dd;
-	text-decoration-line: underline ;
-	font-size: 14px;
+  color: #acc1dd;
+  text-decoration-line: underline;
+  font-size: 14px;
 }
 .train-header {
-	float:left;
-	margin: 20px 15px 15px;
+  float: left;
+  margin: 20px 15px 15px;
 }
 /*.train-header > a :link {
     color: #fff; Цвет ссылок 
@@ -439,129 +554,139 @@ select option:hover {
     color: #fff;  Цвет активных ссылок 
 }*/
 .frame {
-	height:180px;
-	width:100%;
+  height: 180px;
+  width: 100%;
 }
 .goods-block-img {
-	position: relative;
-	top:0;
-	left:0;
-	float:left;
-	height:180px;
-	width:100%;
-	background-color: rgba(255,255,255,0.75);
+  position: relative;
+  top: 0;
+  left: 0;
+  float: left;
+  height: 180px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.75);
 }
 /*к высоте блока добавляем высоту картинки*/
 .good-foto {
-  	height: 180px;
-  	text-align: center;
-  	line-height: 180px; 
+  height: 180px;
+  text-align: center;
+  line-height: 180px;
 }
 .good-foto > img {
-	vertical-align: middle;
+  vertical-align: middle;
 }
 .good-block-btn {
-	height:30px;
-	width:30px;
-	border: 1px solid #2c71b8;
-	line-height: 35px;
+  height: 30px;
+  width: 30px;
+  border: 1px solid #2c71b8;
+  line-height: 35px;
 }
 .swell-foto {
-  position: absolute; 
+  position: absolute;
   top: 10px;
-  right:10px;
-  background: url(../images/icon8.png) no-repeat 50% 50%; 
+  right: 10px;
+  background: url(../images/icon8.png) no-repeat 50% 50%;
 }
-.swell-foto:hover { background: url(../images/icon6.png) no-repeat 50% 50% #2c71b8; }
+.swell-foto:hover {
+  background: url(../images/icon6.png) no-repeat 50% 50% #2c71b8;
+}
 
 .like-btn {
-  position: absolute; 
+  position: absolute;
   top: 50px;
-  right:10px;
+  right: 10px;
   background: url(../images/icon5.png) no-repeat 50% 50%;
 }
-.like-btn:hover { background: url(../images/icon7.png) no-repeat 50% 50% #2c71b8; }
+.like-btn:hover {
+  background: url(../images/icon7.png) no-repeat 50% 50% #2c71b8;
+}
 
 .like-js {
-	position: absolute; 
-	top: 50px;
-	right:10px;
-	background: url(../images/icon7.png) no-repeat 50% 50% #2c71b8;
+  position: absolute;
+  top: 50px;
+  right: 10px;
+  background: url(../images/icon7.png) no-repeat 50% 50% #2c71b8;
 }
 
 .good-info {
-	height:0px;
-	color:#fff;
-   	display:block;
+  height: 0px;
+  color: #fff;
+  display: block;
 }
 .good-text {
-   	color:#fff;
-   	font-size: 21px ;
-   	margin: 10px 10px 5px 10px; 
+  color: #fff;
+  font-size: 21px;
+  margin: 10px 10px 5px 10px;
 }
-p { margin:21px 0 7px 0; }
+p {
+  margin: 21px 0 7px 0;
+}
 
-strong { 
-    text-transform: uppercase; /* Заглавные буквы */
-	font-weight: bold;
+strong {
+  text-transform: uppercase; /* Заглавные буквы */
+  font-weight: bold;
 }
 
 .price {
-	font-size: 48px ;
-	font-weight: 700;
-	text-align: center;
-	padding-bottom: 10px;
+  font-size: 48px;
+  font-weight: 700;
+  text-align: center;
+  padding-bottom: 10px;
 }
 sup {
-    vertical-align: super;                      /* почему это свойство */
-    font-size: 30px;
+  vertical-align: super; /* почему это свойство */
+  font-size: 30px;
 }
 .more {
-	display: flex;                         /* как выровнять без флексов */
-	align-items: center; 
-	justify-content: center;
-	margin: 0 20px 15px;
+  display: flex; /* как выровнять без флексов */
+  align-items: center;
+  justify-content: center;
+  margin: 0 20px 15px;
 }
 .btn_2 {
-	height:40px;
-	width:210px;
-	color:#fff;
-	text-align: center;
-	line-height: 40px;
-	font-size: 21px;
-	text-transform: uppercase;
-	font-weight: bold;
-	border:1px solid #fff;
-	background-color: rgba(44,113,184,1); 
+  height: 40px;
+  width: 210px;
+  color: #fff;
+  text-align: center;
+  line-height: 40px;
+  font-size: 21px;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: 1px solid #fff;
+  background-color: rgba(44, 113, 184, 1);
 }
-.btn_2:hover {background-color: rgba(255,255,255,0.25); }
+.btn_2:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+}
 
 .product-quantity {
-	text-align:center;
-	margin-bottom: 15px;
+  text-align: center;
+  margin-bottom: 15px;
 }
 .product-quantity input {
-	width:50px;
-	text-align:center;
+  width: 50px;
+  text-align: center;
 }
 .load > a {
-	display: block;
-	height:100%;
-	width: 100%;
-	text-align: center;
-	margin-bottom: 60px;
-	margin-top: 40px;
-	text-decoration: none;
-	font-size: 36px;
-	font-weight: 300;
-	color:#fff;
+  display: block;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 60px;
+  margin-top: 40px;
+  text-decoration: none;
+  font-size: 36px;
+  font-weight: 300;
+  color: #fff;
 }
 
-footer { background-color: rgba(255,255,255,0.75); }
+footer {
+  background-color: rgba(255, 255, 255, 0.75);
+}
 
-.footer{
-	padding-bottom: 40px;
-	padding-top: 40px;
-	font-size: 21px;
-	text-align: center;
+.footer {
+  padding-bottom: 40px;
+  padding-top: 40px;
+  font-size: 21px;
+  text-align: center;
 }
