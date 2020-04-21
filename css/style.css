@@ -587,6 +587,11 @@ label {
   right: 10px;
   background: url(../images/icon8.png) no-repeat 50% 50%;
 }
+.href-swell-foto {
+  display: inline-block;
+  position: relative;
+}
+
 .swell-foto:hover {
   background: url(../images/icon6.png) no-repeat 50% 50% #2c71b8;
 }

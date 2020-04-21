@@ -16,6 +16,9 @@
 
 										<!-- 	selectize / chosen 1.87  -->
 	<link href="chosen/chosen.min.css" rel="stylesheet" />
+
+					<!-- увеличение изображения -->
+	<link rel="stylesheet" type="text/css" href="simplebox/simplebox.css" />
 				<!-- 	 Вставляем между резет и основныи стилями -->
 	<link rel="stylesheet" href="css/style.css">
 
@@ -231,8 +234,14 @@
 							<div class="goods-container">   <!-- Товар № 1 -->
 								<div class="frame row">
 									<div class="goods-block-img">
-										<div class="good-foto"><img src="images/icon17.png"></div>
-										<button class="good-block-btn swell-foto"></button>
+										<div class="good-foto ">
+											<img src="images/icon17.png">
+										</div>
+										
+										<a rel="simplebox" href="images/icon17-1.jpg">
+											<button class="good-block-btn swell-foto">
+											</button>
+										</a>
 										<button class="good-block-btn like-btn"></button>
 									</div>
 								</div>
@@ -258,7 +267,9 @@
 								<div class="frame row">
 									<div class="goods-block-img">
 										<div class="good-foto"><img src="images/icon9.png"></div>
-										<button class="good-block-btn swell-foto"></button>
+										<a rel="simplebox" href="images/icon9-1.jpg" targrt="_blank">
+											<button class="good-block-btn swell-foto"></button>
+										</a>
 										<button class="good-block-btn like-btn"></button>
 									</div>
 								</div>
@@ -284,7 +295,9 @@
 								<div class="frame row">
 									<div class="goods-block-img">
 										<div class="good-foto"><img src="images/icon10.png"></div>
-										<button class="good-block-btn swell-foto"></button>
+										<a rel="simplebox" href="images/icon10-1.jpg" targrt="_blank">
+											<button class="good-block-btn swell-foto"></button>
+										</a>
 										<button class="good-block-btn like-btn"></button>
 									</div>
 								</div>
@@ -310,7 +323,9 @@
 								<div class="frame row">
 									<div class="goods-block-img">
 										<div class="good-foto"><img src="images/icon16.png"></div>
-										<button class="good-block-btn swell-foto"></button>
+										<a rel="simplebox" href="images/icon17-1.jpg">
+											<button class="good-block-btn swell-foto"></button>
+										</a>
 										<button class="good-block-btn like-btn"></button>
 									</div>
 								</div>
@@ -336,7 +351,9 @@
 								<div class="frame row">
 									<div class="goods-block-img">
 										<div class="good-foto"><img src="images/icon14.png"></div>
-										<button class="good-block-btn swell-foto"></button>
+										<a rel="simplebox" href="images/icon14-1.jpg">
+											<button class="good-block-btn swell-foto"></button>
+										</a>
 										<button class="good-block-btn like-btn"></button>
 									</div>
 								</div>
@@ -362,7 +379,9 @@
 								<div class="frame row">
 									<div class="goods-block-img">
 										<div class="good-foto"><img src="images/icon15.png"></div>
-										<button class="good-block-btn swell-foto"></button>
+										<a rel="simplebox" href="images/icon15-1.jpg">
+											<button class="good-block-btn swell-foto"></button>
+										</a>
 										<button class="good-block-btn like-btn"></button>
 									</div>
 								</div>
@@ -388,7 +407,9 @@
 								<div class="frame row">
 									<div class="goods-block-img">
 										<div class="good-foto"><img src="images/icon15.png"></div>
-										<button class="good-block-btn swell-foto"></button>
+										<a rel="simplebox" href="images/icon15-1.jpg">
+											<button class="good-block-btn swell-foto"></button>
+										</a>
 										<button class="good-block-btn like-btn"></button>
 									</div>
 								</div>
@@ -414,7 +435,9 @@
 								<div class="frame row">
 									<div class="goods-block-img">
 										<div class="good-foto"><img src="images/icon9.png"></div>
-										<button class="good-block-btn swell-foto"></button>
+										<a rel="simplebox" href="images/icon9-1.jpg">
+											<button class="good-block-btn swell-foto"></button>
+										</a>
 										<button class="good-block-btn like-btn"></button>
 									</div>
 								</div>
@@ -440,7 +463,9 @@
 								<div class="frame row">
 									<div class="goods-block-img">
 										<div class="good-foto"><img src="images/icon10.png"></div>
-										<button class="good-block-btn swell-foto"></button>
+										<a rel="simplebox" href="images/icon10-1.jpg">
+											<button class="good-block-btn swell-foto"></button>
+										</a>
 										<button class="good-block-btn like-btn"></button>
 									</div>
 								</div>
@@ -487,8 +512,28 @@
 
 <script src="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/js/select2.min.js"></script>
 
-<script src="js/app.js"></script>
 
 <!-- 	<script src="js/app9HW.js"></script> -->
+
+				<!-- увеличение изображения -->
+
+<script type="text/javascript" src="simplebox/simplebox_util.js"></script>
+<script type="text/javascript">
+	(function () {
+		var boxes = [], els, i, l;
+		if (document.querySelectorAll) {
+			els = document.querySelectorAll('a[rel=simplebox]');
+			Box.getStyles('simplebox_css', 'simplebox/simplebox.css');
+			Box.getScripts('simplebox_js', 'simplebox/simplebox.js', function () {
+				simplebox.init();
+				for (i = 0, l = els.length; i < l; ++i)
+					simplebox.start(els[i]);
+				simplebox.start('a[rel=simplebox_group]');
+			});
+		}
+	})();</script>
+
+	<script src="js/app.js"></script>
+
 </body>
 </html>

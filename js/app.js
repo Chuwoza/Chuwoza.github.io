@@ -11,7 +11,7 @@ $(document).ready(function () {
 
 $(".slider-block").slick({
   autoplay: true,
-  autoplaySpeed: 10000,
+  autoplaySpeed: 2000,
   dots: true,
 });
 
